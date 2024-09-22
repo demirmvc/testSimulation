@@ -1,0 +1,1074 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _630d60de3b-20240620 OPENFOAM=2406 version=v2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : pimpleFoam
+Date   : Sep 05 2024
+Time   : 21:06:29
+Host   : hakan-X556UQK
+PID    : 20022
+I/O    : uncollated
+Case   : /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p
+
+Using #codeStream at line 19 in file "0/p"
+Using #codeStream with "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so"
+Creating new library in "dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e/platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so
+Reading field U
+
+Using #codeStream at line 19 in file "0/U"
+Using #codeStream with "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so"
+Creating new library in "dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03/platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+No finite volume options present
+Courant Number mean: 0.123796159305 max: 0.152696725009
+Courant Number mean: 0.123796159305 max: 0.152696725009
+
+Starting time loop
+
+Using dynamicCode for functionObject diff at line 51 in "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/system/controlDict/functions/diff"
+Creating new library in "dynamicCode/diff/platforms/linux64GccDPInt32Opt/lib/libdiff_d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/diff
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/diff
+    dep: functionObjectTemplate.C
+    Ctoo: functionObjectTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/pimple/pimple_nu1/TGV_temporal/dynamicCode/diff/../platforms/linux64GccDPInt32Opt/lib/libdiff_d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8.so
+Courant Number mean: 0.123796159305 max: 0.152696725009
+Time = 0.0075
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744268521435, Final residual = 8.24796738539e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744268521435, Final residual = 8.36284343089e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.103256649941, Final residual = 0.000971208608829, No Iterations 35
+time step continuity errors : sum local = 6.098627059e-09, global = 1.42007674426e-19, cumulative = 1.42007674426e-19
+DICPCG:  Solving for p, Initial residual = 0.0960195680585, Final residual = 0.000932739068779, No Iterations 35
+time step continuity errors : sum local = 5.75782479369e-09, global = -6.11087450912e-20, cumulative = 8.08989293352e-20
+DICPCG:  Solving for p, Initial residual = 0.00158004772453, Final residual = 1.44656099042e-05, No Iterations 84
+time step continuity errors : sum local = 9.67806518997e-11, global = 2.43176417596e-20, cumulative = 1.05216571095e-19
+DICPCG:  Solving for p, Initial residual = 0.000375143906781, Final residual = 8.98710498767e-13, No Iterations 196
+time step continuity errors : sum local = 1.0645005239e-17, global = 1.19298466397e-20, cumulative = 1.17146417735e-19
+ExecutionTime = 0.61 s  ClockTime = 46 s
+
+    Reading error_velocity_mag (volScalarField)
+    Reading error_velocity_mag_squ (volScalarField)
+    Reading error_pres (volScalarField)
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.121967060736 max: 0.15044062632
+Time = 0.015
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074426907294, Final residual = 8.22071169087e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269019236, Final residual = 8.35651785189e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.234655996913, Final residual = 0.00220959880251, No Iterations 35
+time step continuity errors : sum local = 1.2214454493e-08, global = 5.99851172467e-20, cumulative = 1.77131534981e-19
+DICPCG:  Solving for p, Initial residual = 0.220452102312, Final residual = 0.00214166398053, No Iterations 35
+time step continuity errors : sum local = 1.15218819993e-08, global = -7.8132729009e-21, cumulative = 1.6931826208e-19
+DICPCG:  Solving for p, Initial residual = 0.00326258737022, Final residual = 2.97969316356e-05, No Iterations 84
+time step continuity errors : sum local = 1.93538231597e-10, global = 4.68471570077e-20, cumulative = 2.16165419088e-19
+DICPCG:  Solving for p, Initial residual = 0.00077160609879, Final residual = 8.72973620237e-13, No Iterations 199
+time step continuity errors : sum local = 1.04233360793e-17, global = -4.71216476125e-20, cumulative = 1.69043771476e-19
+ExecutionTime = 1.21 s  ClockTime = 47 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.120165026628 max: 0.148217915403
+Time = 0.0225
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269434342, Final residual = 8.20641221861e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0074426932767, Final residual = 8.34041777927e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236172547704, Final residual = 0.00222867967862, No Iterations 35
+time step continuity errors : sum local = 1.19393362935e-08, global = -1.73159224911e-21, cumulative = 1.67312179226e-19
+DICPCG:  Solving for p, Initial residual = 0.221899890694, Final residual = 0.00215512985057, No Iterations 35
+time step continuity errors : sum local = 1.12371438435e-08, global = 3.16279275566e-20, cumulative = 1.98940106783e-19
+DICPCG:  Solving for p, Initial residual = 0.00328506108377, Final residual = 2.987766804e-05, No Iterations 84
+time step continuity errors : sum local = 1.88381716899e-10, global = 1.08271381457e-19, cumulative = 3.0721148824e-19
+DICPCG:  Solving for p, Initial residual = 0.000773921002745, Final residual = 8.76199214751e-13, No Iterations 199
+time step continuity errors : sum local = 1.01917441675e-17, global = 2.22988675587e-21, cumulative = 3.09441374996e-19
+ExecutionTime = 1.69 s  ClockTime = 47 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.118389615041 max: 0.146028040754
+Time = 0.03
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269520758, Final residual = 8.19238121544e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269418087, Final residual = 8.3248615413e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236288049745, Final residual = 0.00222900354915, No Iterations 35
+time step continuity errors : sum local = 1.15899129248e-08, global = 6.78096543351e-20, cumulative = 3.77251029331e-19
+DICPCG:  Solving for p, Initial residual = 0.222010785836, Final residual = 0.00215622915857, No Iterations 35
+time step continuity errors : sum local = 1.09120947992e-08, global = 9.89023318402e-20, cumulative = 4.76153361171e-19
+DICPCG:  Solving for p, Initial residual = 0.0032864065835, Final residual = 2.98411172084e-05, No Iterations 84
+time step continuity errors : sum local = 1.82631000097e-10, global = 5.16263106945e-21, cumulative = 4.8131599224e-19
+DICPCG:  Solving for p, Initial residual = 0.000774312823436, Final residual = 8.76412915976e-13, No Iterations 199
+time step continuity errors : sum local = 1.00560345866e-17, global = 3.41298590348e-20, cumulative = 5.15445851275e-19
+ExecutionTime = 2.13 s  ClockTime = 48 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.116640432399 max: 0.143870517024
+Time = 0.0375
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074426959484, Final residual = 8.17900581808e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269494055, Final residual = 8.30962512067e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297026961, Final residual = 0.00222925090028, No Iterations 35
+time step continuity errors : sum local = 1.12510371216e-08, global = -3.52081037164e-20, cumulative = 4.80237747559e-19
+DICPCG:  Solving for p, Initial residual = 0.222019747911, Final residual = 0.00215635228344, No Iterations 35
+time step continuity errors : sum local = 1.05925288048e-08, global = -1.5419943506e-20, cumulative = 4.64817804053e-19
+DICPCG:  Solving for p, Initial residual = 0.00328655471894, Final residual = 2.9795238352e-05, No Iterations 84
+time step continuity errors : sum local = 1.77002876352e-10, global = -5.25518036341e-20, cumulative = 4.12266000419e-19
+DICPCG:  Solving for p, Initial residual = 0.000774327738601, Final residual = 8.76206371756e-13, No Iterations 199
+time step continuity errors : sum local = 9.73252150401e-18, global = 3.83933561339e-20, cumulative = 4.50659356553e-19
+ExecutionTime = 2.63 s  ClockTime = 48 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.114917091299 max: 0.141744866473
+Time = 0.045
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074426966093, Final residual = 8.16603425036e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269562154, Final residual = 8.29481749047e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297792215, Final residual = 0.00222930366512, No Iterations 35
+time step continuity errors : sum local = 1.09212160128e-08, global = -2.87934758087e-20, cumulative = 4.21865880744e-19
+DICPCG:  Solving for p, Initial residual = 0.222020852175, Final residual = 0.00215640466305, No Iterations 35
+time step continuity errors : sum local = 1.02820505076e-08, global = 4.36747246344e-20, cumulative = 4.65540605378e-19
+DICPCG:  Solving for p, Initial residual = 0.00328661959638, Final residual = 2.97492406943e-05, No Iterations 84
+time step continuity errors : sum local = 1.71547015895e-10, global = 1.83199092014e-20, cumulative = 4.8386051458e-19
+DICPCG:  Solving for p, Initial residual = 0.00077433820033, Final residual = 8.75992035521e-13, No Iterations 199
+time step continuity errors : sum local = 9.5414404928e-18, global = 3.19990438763e-20, cumulative = 5.15859558456e-19
+ExecutionTime = 3.19 s  ClockTime = 49 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.11321921008 max: 0.139650618441
+Time = 0.0525
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269719773, Final residual = 8.15341727969e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269622933, Final residual = 8.28039908413e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297914556, Final residual = 0.00222936912366, No Iterations 35
+time step continuity errors : sum local = 1.06011253708e-08, global = -4.23221674618e-20, cumulative = 4.73537390994e-19
+DICPCG:  Solving for p, Initial residual = 0.222021341121, Final residual = 0.00215644779689, No Iterations 35
+time step continuity errors : sum local = 9.98063599194e-09, global = 4.12582547005e-20, cumulative = 5.14795645695e-19
+DICPCG:  Solving for p, Initial residual = 0.00328667152527, Final residual = 2.97034017692e-05, No Iterations 84
+time step continuity errors : sum local = 1.66259799273e-10, global = 2.21814229009e-20, cumulative = 5.36977068596e-19
+DICPCG:  Solving for p, Initial residual = 0.000774344222343, Final residual = 8.75766418565e-13, No Iterations 199
+time step continuity errors : sum local = 9.31363722244e-18, global = 1.68728398707e-20, cumulative = 5.53849908466e-19
+ExecutionTime = 3.76 s  ClockTime = 49 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.111546412716 max: 0.137587309205
+Time = 0.06
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269771865, Final residual = 8.14119121618e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269676916, Final residual = 8.26638195398e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.23629797523, Final residual = 0.00222942874487, No Iterations 35
+time step continuity errors : sum local = 1.0290391103e-08, global = 8.53030380656e-20, cumulative = 6.39152946532e-19
+DICPCG:  Solving for p, Initial residual = 0.222021765132, Final residual = 0.00215648930342, No Iterations 35
+time step continuity errors : sum local = 9.68805022892e-09, global = 5.07203230439e-20, cumulative = 6.89873269576e-19
+DICPCG:  Solving for p, Initial residual = 0.00328672087008, Final residual = 2.96578143121e-05, No Iterations 84
+time step continuity errors : sum local = 1.61136492523e-10, global = -6.75514965383e-20, cumulative = 6.22321773038e-19
+DICPCG:  Solving for p, Initial residual = 0.000774350484607, Final residual = 8.75534468548e-13, No Iterations 199
+time step continuity errors : sum local = 9.27480968119e-18, global = 5.17916256992e-20, cumulative = 6.74113398737e-19
+ExecutionTime = 4.34 s  ClockTime = 50 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.109898328726 max: 0.135554481882
+Time = 0.0675
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074426981767, Final residual = 8.12935389909e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269724565, Final residual = 8.25279455821e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298019565, Final residual = 0.00222948780206, No Iterations 35
+time step continuity errors : sum local = 9.98876286494e-09, global = 6.88121921641e-20, cumulative = 7.42925590901e-19
+DICPCG:  Solving for p, Initial residual = 0.222022170118, Final residual = 0.00215652973069, No Iterations 35
+time step continuity errors : sum local = 9.40403712072e-09, global = -2.2837096671e-20, cumulative = 7.2008849423e-19
+DICPCG:  Solving for p, Initial residual = 0.00328676886008, Final residual = 2.96124937816e-05, No Iterations 84
+time step continuity errors : sum local = 1.56172074162e-10, global = -4.85496223434e-22, cumulative = 7.19602998006e-19
+DICPCG:  Solving for p, Initial residual = 0.000774356470335, Final residual = 8.75295286105e-13, No Iterations 199
+time step continuity errors : sum local = 9.03049923751e-18, global = 1.19696140223e-20, cumulative = 7.31572612029e-19
+ExecutionTime = 4.89 s  ClockTime = 51 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.108274593098 max: 0.133551686323
+Time = 0.075
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269857622, Final residual = 8.11788995707e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269766316, Final residual = 8.23958728501e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298053448, Final residual = 0.00222954537279, No Iterations 35
+time step continuity errors : sum local = 9.69596998476e-09, global = -4.93369651622e-20, cumulative = 6.82235646867e-19
+DICPCG:  Solving for p, Initial residual = 0.222022557654, Final residual = 0.00215656882018, No Iterations 35
+time step continuity errors : sum local = 9.12834447193e-09, global = 1.6102558296e-20, cumulative = 6.98338205162e-19
+DICPCG:  Solving for p, Initial residual = 0.00328681710758, Final residual = 2.95674523615e-05, No Iterations 84
+time step continuity errors : sum local = 1.51361653018e-10, global = 4.33376275595e-20, cumulative = 7.41675832722e-19
+DICPCG:  Solving for p, Initial residual = 0.000774362100364, Final residual = 8.75049198596e-13, No Iterations 199
+time step continuity errors : sum local = 8.64266503003e-18, global = -1.40293125727e-21, cumulative = 7.40272901465e-19
+ExecutionTime = 5.44 s  ClockTime = 51 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.106674846206 max: 0.131578479019
+Time = 0.0825
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269892133, Final residual = 8.10679282219e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269802584, Final residual = 8.2267395427e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.23629807587, Final residual = 0.00222960112363, No Iterations 35
+time step continuity errors : sum local = 9.4117524407e-09, global = 3.60205080951e-20, cumulative = 7.7629340956e-19
+DICPCG:  Solving for p, Initial residual = 0.222022934142, Final residual = 0.00215660729395, No Iterations 35
+time step continuity errors : sum local = 8.86073160975e-09, global = 5.18050165261e-20, cumulative = 8.28098426086e-19
+DICPCG:  Solving for p, Initial residual = 0.00328686438035, Final residual = 2.95227733806e-05, No Iterations 84
+time step continuity errors : sum local = 1.46700839519e-10, global = 1.88990955557e-20, cumulative = 8.46997521642e-19
+DICPCG:  Solving for p, Initial residual = 0.000774367476856, Final residual = 8.74795983695e-13, No Iterations 199
+time step continuity errors : sum local = 8.55439132492e-18, global = -2.70439585679e-20, cumulative = 8.19953563074e-19
+ExecutionTime = 5.95 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.105098733733 max: 0.129634422998
+Time = 0.09
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269921591, Final residual = 8.09610106644e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269833759, Final residual = 8.21427936822e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298087242, Final residual = 0.00222965567553, No Iterations 35
+time step continuity errors : sum local = 9.13586178662e-09, global = 3.28891645486e-20, cumulative = 8.52842727622e-19
+DICPCG:  Solving for p, Initial residual = 0.222023296976, Final residual = 0.0021566442802, No Iterations 35
+time step continuity errors : sum local = 8.60095841112e-09, global = -3.08622142407e-20, cumulative = 8.21980513382e-19
+DICPCG:  Solving for p, Initial residual = 0.00328691016282, Final residual = 2.94784439656e-05, No Iterations 84
+time step continuity errors : sum local = 1.42184882156e-10, global = -3.97721507873e-20, cumulative = 7.82208362594e-19
+DICPCG:  Solving for p, Initial residual = 0.00077437270622, Final residual = 8.74534795523e-13, No Iterations 199
+time step continuity errors : sum local = 8.2791289149e-18, global = 2.57716994078e-20, cumulative = 8.07980062002e-19
+ExecutionTime = 6.47 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.103545906587 max: 0.127719087736
+Time = 0.0975
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269946362, Final residual = 8.08576581157e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269860207, Final residual = 8.20217935008e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298088179, Final residual = 0.00222970906231, No Iterations 35
+time step continuity errors : sum local = 8.8680543078e-09, global = -3.71132599971e-20, cumulative = 7.70866802005e-19
+DICPCG:  Solving for p, Initial residual = 0.222023647017, Final residual = 0.00215667969764, No Iterations 35
+time step continuity errors : sum local = 8.34879509201e-09, global = -4.02230683281e-20, cumulative = 7.30643733677e-19
+DICPCG:  Solving for p, Initial residual = 0.0032869539007, Final residual = 2.9434531466e-05, No Iterations 84
+time step continuity errors : sum local = 1.37809560431e-10, global = -5.91612868206e-21, cumulative = 7.24727604995e-19
+DICPCG:  Solving for p, Initial residual = 0.000774377834766, Final residual = 8.74265618179e-13, No Iterations 199
+time step continuity errors : sum local = 8.11360929059e-18, global = 2.53292884876e-20, cumulative = 7.50056893482e-19
+ExecutionTime = 7.04 s  ClockTime = 53 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.102016020831 max: 0.125832049057
+Time = 0.105
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269966789, Final residual = 8.07578408182e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269882273, Final residual = 8.19043066766e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298079795, Final residual = 0.0022297610803, No Iterations 35
+time step continuity errors : sum local = 8.608092544e-09, global = -4.44032259024e-20, cumulative = 7.0565366758e-19
+DICPCG:  Solving for p, Initial residual = 0.2220239842, Final residual = 0.00215671400387, No Iterations 35
+time step continuity errors : sum local = 8.10402062349e-09, global = 2.02007362201e-20, cumulative = 7.258544038e-19
+DICPCG:  Solving for p, Initial residual = 0.00328699572482, Final residual = 2.93910255549e-05, No Iterations 84
+time step continuity errors : sum local = 1.33570406512e-10, global = -1.35570845006e-20, cumulative = 7.122973193e-19
+DICPCG:  Solving for p, Initial residual = 0.000774382529818, Final residual = 8.73988913494e-13, No Iterations 199
+time step continuity errors : sum local = 7.84150183504e-18, global = 6.65470157528e-21, cumulative = 7.18952020875e-19
+ExecutionTime = 7.61 s  ClockTime = 53 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.100508737604 max: 0.123972889041
+Time = 0.1125
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269983197, Final residual = 8.06614855258e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269900283, Final residual = 8.17906214578e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298063055, Final residual = 0.00222981233384, No Iterations 35
+time step continuity errors : sum local = 8.35574897715e-09, global = -1.25666343013e-20, cumulative = 7.06385386573e-19
+DICPCG:  Solving for p, Initial residual = 0.222024317697, Final residual = 0.00215674759321, No Iterations 35
+time step continuity errors : sum local = 7.86642003665e-09, global = 1.27439446811e-20, cumulative = 7.19129331255e-19
+DICPCG:  Solving for p, Initial residual = 0.00328703593212, Final residual = 2.93480090302e-05, No Iterations 84
+time step continuity errors : sum local = 1.29463507632e-10, global = 2.85012480878e-20, cumulative = 7.47630579342e-19
+DICPCG:  Solving for p, Initial residual = 0.000774386943484, Final residual = 8.73703528659e-13, No Iterations 199
+time step continuity errors : sum local = 7.24579601551e-18, global = 3.93930901532e-21, cumulative = 7.51569888358e-19
+ExecutionTime = 8.13 s  ClockTime = 54 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0990237230466 max: 0.122141195936
+Time = 0.12
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269995888, Final residual = 8.05687188609e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269914541, Final residual = 8.16806393713e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.23629803887, Final residual = 0.00222986358276, No Iterations 35
+time step continuity errors : sum local = 8.11080322302e-09, global = 6.88081189535e-20, cumulative = 8.20378007311e-19
+DICPCG:  Solving for p, Initial residual = 0.222024639494, Final residual = 0.0021567801845, No Iterations 35
+time step continuity errors : sum local = 7.6357821741e-09, global = 3.42956291006e-20, cumulative = 8.54673636412e-19
+DICPCG:  Solving for p, Initial residual = 0.00328707515304, Final residual = 2.93054585631e-05, No Iterations 84
+time step continuity errors : sum local = 1.25484589799e-10, global = 1.33227617434e-21, cumulative = 8.56005912586e-19
+DICPCG:  Solving for p, Initial residual = 0.000774391124607, Final residual = 8.73410453031e-13, No Iterations 199
+time step continuity errors : sum local = 7.04443092545e-18, global = 8.08934093089e-21, cumulative = 8.64095253517e-19
+ExecutionTime = 8.53 s  ClockTime = 54 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0975606482261 max: 0.120336564061
+Time = 0.1275
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270005149, Final residual = 8.04793004316e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269925334, Final residual = 8.15744538087e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236298007698, Final residual = 0.002229914424, No Iterations 35
+time step continuity errors : sum local = 7.87303691752e-09, global = 2.67720318782e-20, cumulative = 8.90867285395e-19
+DICPCG:  Solving for p, Initial residual = 0.222024949785, Final residual = 0.00215681148919, No Iterations 35
+time step continuity errors : sum local = 7.41190212056e-09, global = 8.68059019363e-21, cumulative = 8.99547875589e-19
+DICPCG:  Solving for p, Initial residual = 0.00328711410109, Final residual = 2.92633673214e-05, No Iterations 84
+time step continuity errors : sum local = 1.21629594041e-10, global = -2.39398053102e-20, cumulative = 8.75608070279e-19
+DICPCG:  Solving for p, Initial residual = 0.000774395168714, Final residual = 8.73108945894e-13, No Iterations 199
+time step continuity errors : sum local = 7.01297201572e-18, global = 1.25839351892e-20, cumulative = 8.88192005468e-19
+ExecutionTime = 8.94 s  ClockTime = 55 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0961191890662 max: 0.118558593724
+Time = 0.135
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270011246, Final residual = 8.03937000101e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269932929, Final residual = 8.14722114826e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297968403, Final residual = 0.00222996368442, No Iterations 35
+time step continuity errors : sum local = 7.64223573932e-09, global = 3.05752288927e-21, cumulative = 8.91249528357e-19
+DICPCG:  Solving for p, Initial residual = 0.222025250301, Final residual = 0.00215684157391, No Iterations 35
+time step continuity errors : sum local = 7.19458219324e-09, global = 6.16524432833e-21, cumulative = 8.97414772685e-19
+DICPCG:  Solving for p, Initial residual = 0.00328715207444, Final residual = 2.92216740011e-05, No Iterations 84
+time step continuity errors : sum local = 1.17894372996e-10, global = 7.45296465395e-21, cumulative = 9.04867737339e-19
+DICPCG:  Solving for p, Initial residual = 0.000774398967746, Final residual = 8.72799107301e-13, No Iterations 199
+time step continuity errors : sum local = 6.82396014819e-18, global = -3.62260417994e-20, cumulative = 8.6864169554e-19
+ExecutionTime = 9.36 s  ClockTime = 55 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0946990262743 max: 0.116806891126
+Time = 0.1425
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270014432, Final residual = 8.03112064105e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0074426993758, Final residual = 8.13733673048e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297921097, Final residual = 0.0022300117633, No Iterations 35
+time step continuity errors : sum local = 7.41819710502e-09, global = -3.18462214756e-20, cumulative = 8.36795474064e-19
+DICPCG:  Solving for p, Initial residual = 0.222025545198, Final residual = 0.00215687056922, No Iterations 35
+time step continuity errors : sum local = 6.98363072756e-09, global = 4.62448954122e-20, cumulative = 8.83040369476e-19
+DICPCG:  Solving for p, Initial residual = 0.00328718952525, Final residual = 2.91804365558e-05, No Iterations 84
+time step continuity errors : sum local = 1.14275396313e-10, global = 4.01595509137e-20, cumulative = 9.2319992039e-19
+DICPCG:  Solving for p, Initial residual = 0.000774402776034, Final residual = 8.72482471107e-13, No Iterations 199
+time step continuity errors : sum local = 6.72192763899e-18, global = 6.51671335238e-20, cumulative = 9.88367053914e-19
+ExecutionTime = 9.78 s  ClockTime = 56 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0932998452713 max: 0.115081068283
+Time = 0.15
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074427001494, Final residual = 8.02319460806e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269939521, Final residual = 8.12777221355e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297866123, Final residual = 0.00223005866654, No Iterations 35
+time step continuity errors : sum local = 7.20072298981e-09, global = 2.29989816511e-20, cumulative = 1.01136603557e-18
+DICPCG:  Solving for p, Initial residual = 0.222025832805, Final residual = 0.00215689844051, No Iterations 35
+time step continuity errors : sum local = 6.77886110201e-09, global = 2.38509112592e-21, cumulative = 1.01375112669e-18
+DICPCG:  Solving for p, Initial residual = 0.00328722520706, Final residual = 2.91396537696e-05, No Iterations 84
+time step continuity errors : sum local = 1.10769003254e-10, global = 1.82933209732e-20, cumulative = 1.03204444766e-18
+DICPCG:  Solving for p, Initial residual = 0.000774406501866, Final residual = 8.72159530725e-13, No Iterations 199
+time step continuity errors : sum local = 6.7054570369e-18, global = 2.36982312393e-20, cumulative = 1.0557426789e-18
+ExecutionTime = 10.31 s  ClockTime = 56 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0919213361219 max: 0.113380742933
+Time = 0.1575
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270012992, Final residual = 8.01554472869e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269938975, Final residual = 8.11851579911e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297804199, Final residual = 0.00223010451165, No Iterations 35
+time step continuity errors : sum local = 6.98962149862e-09, global = -2.80998734073e-21, cumulative = 1.05293269156e-18
+DICPCG:  Solving for p, Initial residual = 0.222026114377, Final residual = 0.00215692534798, No Iterations 35
+time step continuity errors : sum local = 6.58009273339e-09, global = -9.41838190198e-21, cumulative = 1.04351430966e-18
+DICPCG:  Solving for p, Initial residual = 0.00328726063802, Final residual = 2.90993448284e-05, No Iterations 84
+time step continuity errors : sum local = 1.07371722726e-10, global = 2.30887070017e-20, cumulative = 1.06660301666e-18
+DICPCG:  Solving for p, Initial residual = 0.000774410185829, Final residual = 8.71829693992e-13, No Iterations 199
+time step continuity errors : sum local = 6.56989279958e-18, global = 1.53307683273e-21, cumulative = 1.0681360935e-18
+ExecutionTime = 10.81 s  ClockTime = 57 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0905631934665 max: 0.111705538457
+Time = 0.165
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270008792, Final residual = 8.00812974147e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269936147, Final residual = 8.10954128546e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297735925, Final residual = 0.00223014935475, No Iterations 35
+time step continuity errors : sum local = 6.78470614399e-09, global = -3.73683888149e-20, cumulative = 1.03076770468e-18
+DICPCG:  Solving for p, Initial residual = 0.222026388308, Final residual = 0.00215695117183, No Iterations 35
+time step continuity errors : sum local = 6.38714948393e-09, global = 1.60664148372e-20, cumulative = 1.04683411952e-18
+DICPCG:  Solving for p, Initial residual = 0.0032872956827, Final residual = 2.90595323763e-05, No Iterations 84
+time step continuity errors : sum local = 1.04080201348e-10, global = -5.69854101411e-20, cumulative = 9.89848709377e-19
+DICPCG:  Solving for p, Initial residual = 0.000774413737835, Final residual = 8.71493369518e-13, No Iterations 199
+time step continuity errors : sum local = 6.41644687187e-18, global = 1.44786766783e-20, cumulative = 1.00432738605e-18
+ExecutionTime = 11.35 s  ClockTime = 57 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0892251164536 max: 0.110055083795
+Time = 0.1725
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744270002535, Final residual = 8.00095343949e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269931232, Final residual = 8.10080758996e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297662394, Final residual = 0.00223019316584, No Iterations 35
+time step continuity errors : sum local = 6.58579564272e-09, global = -3.49624036269e-20, cumulative = 9.69364982428e-19
+DICPCG:  Solving for p, Initial residual = 0.222026651615, Final residual = 0.00215697624227, No Iterations 35
+time step continuity errors : sum local = 6.19986167148e-09, global = 3.54544323877e-20, cumulative = 1.00481941482e-18
+DICPCG:  Solving for p, Initial residual = 0.00328732951105, Final residual = 2.90202472184e-05, No Iterations 84
+time step continuity errors : sum local = 1.00891213467e-10, global = -1.18510939991e-20, cumulative = 9.92968320817e-19
+DICPCG:  Solving for p, Initial residual = 0.00077441707464, Final residual = 8.71150809863e-13, No Iterations 199
+time step continuity errors : sum local = 6.39684587455e-18, global = -7.96578942654e-22, cumulative = 9.92171741874e-19
+ExecutionTime = 11.9 s  ClockTime = 58 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0879068086735 max: 0.108429013362
+Time = 0.18
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.007442699944, Final residual = 7.99400476046e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269924409, Final residual = 8.09232599957e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297582786, Final residual = 0.0022302362327, No Iterations 35
+time step continuity errors : sum local = 6.39271491076e-09, global = -4.63553246788e-20, cumulative = 9.45816417195e-19
+DICPCG:  Solving for p, Initial residual = 0.222026906636, Final residual = 0.00215700030765, No Iterations 35
+time step continuity errors : sum local = 6.01806291179e-09, global = -3.0487956583e-20, cumulative = 9.15328460612e-19
+DICPCG:  Solving for p, Initial residual = 0.00328736215654, Final residual = 2.89814798963e-05, No Iterations 84
+time step continuity errors : sum local = 9.78014906076e-11, global = 8.75117954709e-21, cumulative = 9.24079640159e-19
+DICPCG:  Solving for p, Initial residual = 0.000774420296437, Final residual = 8.70802736955e-13, No Iterations 199
+time step continuity errors : sum local = 6.34656541729e-18, global = -7.89925162406e-22, cumulative = 9.23289714997e-19
+ExecutionTime = 12.44 s  ClockTime = 58 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0866079780927 max: 0.106826966968
+Time = 0.1875
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269984556, Final residual = 7.98727129615e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0074426991585, Final residual = 8.08410173296e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297497398, Final residual = 0.0022302785134, No Iterations 35
+time step continuity errors : sum local = 6.20529302173e-09, global = -1.12685372673e-20, cumulative = 9.12021177729e-19
+DICPCG:  Solving for p, Initial residual = 0.222027151423, Final residual = 0.00215702371168, No Iterations 35
+time step continuity errors : sum local = 5.84159331725e-09, global = -5.45444137276e-20, cumulative = 8.57476764002e-19
+DICPCG:  Solving for p, Initial residual = 0.00328739401957, Final residual = 2.89432581509e-05, No Iterations 84
+time step continuity errors : sum local = 9.48079939762e-11, global = -2.27431169997e-20, cumulative = 8.34733647002e-19
+DICPCG:  Solving for p, Initial residual = 0.000774423394547, Final residual = 8.70450808586e-13, No Iterations 199
+time step continuity errors : sum local = 6.18401916991e-18, global = 5.87603626965e-21, cumulative = 8.40609683272e-19
+ExecutionTime = 12.98 s  ClockTime = 59 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0853283369896 max: 0.105248589743
+Time = 0.195
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269973159, Final residual = 7.98073741997e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269905711, Final residual = 8.07611615639e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297406646, Final residual = 0.0022303201658, No Iterations 35
+time step continuity errors : sum local = 6.02336459407e-09, global = -5.54117565565e-21, cumulative = 8.35068507616e-19
+DICPCG:  Solving for p, Initial residual = 0.22202738649, Final residual = 0.00215704651551, No Iterations 35
+time step continuity errors : sum local = 5.67029691088e-09, global = 2.68232990172e-20, cumulative = 8.61891806633e-19
+DICPCG:  Solving for p, Initial residual = 0.00328742484794, Final residual = 2.89055902255e-05, No Iterations 84
+time step continuity errors : sum local = 9.19077107029e-11, global = 4.00687923317e-20, cumulative = 9.01960598965e-19
+DICPCG:  Solving for p, Initial residual = 0.000774426587196, Final residual = 8.7009499924e-13, No Iterations 199
+time step continuity errors : sum local = 6.17341155251e-18, global = -1.47288342681e-20, cumulative = 8.87231764697e-19
+ExecutionTime = 13.53 s  ClockTime = 60 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0840676018909 max: 0.103693532052
+Time = 0.2025
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269960357, Final residual = 7.97440057453e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269894139, Final residual = 8.06833867396e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297311053, Final residual = 0.00223036062629, No Iterations 35
+time step continuity errors : sum local = 5.84676721135e-09, global = -2.55480572207e-20, cumulative = 8.61683707476e-19
+DICPCG:  Solving for p, Initial residual = 0.222027614249, Final residual = 0.00215706850845, No Iterations 35
+time step continuity errors : sum local = 5.50402155807e-09, global = -5.39873899922e-21, cumulative = 8.56284968477e-19
+DICPCG:  Solving for p, Initial residual = 0.00328745444051, Final residual = 2.88684416607e-05, No Iterations 84
+time step continuity errors : sum local = 8.909759194e-11, global = 3.58766858085e-20, cumulative = 8.92161654286e-19
+DICPCG:  Solving for p, Initial residual = 0.000774429572117, Final residual = 8.69735560995e-13, No Iterations 199
+time step continuity errors : sum local = 6.08483795766e-18, global = 2.0176001001e-21, cumulative = 8.94179254386e-19
+ExecutionTime = 14.06 s  ClockTime = 60 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0828254935086 max: 0.102161449422
+Time = 0.21
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269946287, Final residual = 7.96825574341e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269881273, Final residual = 8.06076317411e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297211352, Final residual = 0.0022304006871, No Iterations 35
+time step continuity errors : sum local = 5.6753466986e-09, global = -2.28029018162e-20, cumulative = 8.71376352569e-19
+DICPCG:  Solving for p, Initial residual = 0.22202783258, Final residual = 0.00215708999238, No Iterations 35
+time step continuity errors : sum local = 5.34262089599e-09, global = -9.97119453154e-21, cumulative = 8.61405158038e-19
+DICPCG:  Solving for p, Initial residual = 0.0032874826485, Final residual = 2.88319227619e-05, No Iterations 84
+time step continuity errors : sum local = 8.63751253617e-11, global = 2.51919810978e-20, cumulative = 8.86597139136e-19
+DICPCG:  Solving for p, Initial residual = 0.00077443258971, Final residual = 8.69372665632e-13, No Iterations 199
+time step continuity errors : sum local = 5.92432334124e-18, global = 1.91685194567e-20, cumulative = 9.05765658592e-19
+ExecutionTime = 14.6 s  ClockTime = 61 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0816017366789 max: 0.100652002467
+Time = 0.2175
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269931077, Final residual = 7.96229382707e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269867241, Final residual = 8.0533808617e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236297107151, Final residual = 0.00223043942945, No Iterations 35
+time step continuity errors : sum local = 5.50894909771e-09, global = 2.39366498291e-21, cumulative = 9.08159323575e-19
+DICPCG:  Solving for p, Initial residual = 0.222028041599, Final residual = 0.0021571107049, No Iterations 35
+time step continuity errors : sum local = 5.18595138481e-09, global = -1.9626979242e-20, cumulative = 8.88532344333e-19
+DICPCG:  Solving for p, Initial residual = 0.0032875098567, Final residual = 2.87958934219e-05, No Iterations 84
+time step continuity errors : sum local = 8.37371268201e-11, global = -2.51540008049e-22, cumulative = 8.88280804325e-19
+DICPCG:  Solving for p, Initial residual = 0.00077443559944, Final residual = 8.69006518335e-13, No Iterations 199
+time step continuity errors : sum local = 5.85593905216e-18, global = 1.51252431777e-20, cumulative = 9.03406047503e-19
+ExecutionTime = 15.15 s  ClockTime = 61 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.080396060301 max: 0.0991648568084
+Time = 0.225
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269914845, Final residual = 7.95651067733e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269852163, Final residual = 8.04618492091e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296998704, Final residual = 0.00223047790445, No Iterations 35
+time step continuity errors : sum local = 5.34742969781e-09, global = -1.85594083305e-20, cumulative = 8.84846639172e-19
+DICPCG:  Solving for p, Initial residual = 0.222028243765, Final residual = 0.00215713101458, No Iterations 35
+time step continuity errors : sum local = 5.03387521291e-09, global = 1.8574594869e-21, cumulative = 8.86704098659e-19
+DICPCG:  Solving for p, Initial residual = 0.00328753704415, Final residual = 2.87604050768e-05, No Iterations 84
+time step continuity errors : sum local = 8.11810869196e-11, global = 5.70676926892e-22, cumulative = 8.87274775586e-19
+DICPCG:  Solving for p, Initial residual = 0.0007744384008, Final residual = 8.68637240668e-13, No Iterations 199
+time step continuity errors : sum local = 5.80009418551e-18, global = 1.44991597113e-20, cumulative = 9.01773935298e-19
+ExecutionTime = 15.68 s  ClockTime = 62 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0792081972775 max: 0.097699683007
+Time = 0.2325
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269897702, Final residual = 7.95090091184e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269836149, Final residual = 8.03917982459e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296886261, Final residual = 0.00223051528757, No Iterations 35
+time step continuity errors : sum local = 5.19064375739e-09, global = -2.02900702784e-20, cumulative = 8.81483865019e-19
+DICPCG:  Solving for p, Initial residual = 0.222028442515, Final residual = 0.00215715055424, No Iterations 35
+time step continuity errors : sum local = 4.8862569522e-09, global = -6.78539190718e-20, cumulative = 8.13629945947e-19
+DICPCG:  Solving for p, Initial residual = 0.00328756437009, Final residual = 2.87254949105e-05, No Iterations 84
+time step continuity errors : sum local = 7.87045236274e-11, global = 1.36950126519e-20, cumulative = 8.27324958599e-19
+DICPCG:  Solving for p, Initial residual = 0.000774441208738, Final residual = 8.68265405235e-13, No Iterations 199
+time step continuity errors : sum local = 5.73290703228e-18, global = 1.61047014564e-20, cumulative = 8.43429660056e-19
+ExecutionTime = 16.23 s  ClockTime = 63 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0780378844548 max: 0.0962561564859
+Time = 0.24
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269879751, Final residual = 7.94546071099e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269819304, Final residual = 8.03237290676e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296769952, Final residual = 0.00223055136148, No Iterations 35
+time step continuity errors : sum local = 5.03845212176e-09, global = 4.90294880446e-20, cumulative = 8.924591481e-19
+DICPCG:  Solving for p, Initial residual = 0.222028635998, Final residual = 0.00215716930277, No Iterations 35
+time step continuity errors : sum local = 4.74296593698e-09, global = 1.63381130737e-20, cumulative = 9.08797261174e-19
+DICPCG:  Solving for p, Initial residual = 0.00328759098249, Final residual = 2.86911499463e-05, No Iterations 84
+time step continuity errors : sum local = 7.63048941181e-11, global = -6.27949419419e-21, cumulative = 9.0251776698e-19
+DICPCG:  Solving for p, Initial residual = 0.00077444385881, Final residual = 8.67891556119e-13, No Iterations 199
+time step continuity errors : sum local = 5.5792454234e-18, global = 7.75749792125e-21, cumulative = 9.10275264901e-19
+ExecutionTime = 16.79 s  ClockTime = 63 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0768848625656 max: 0.0948339574606
+Time = 0.2475
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269861088, Final residual = 7.9401918145e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269801723, Final residual = 8.02577419997e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296650125, Final residual = 0.00223058677714, No Iterations 35
+time step continuity errors : sum local = 4.89072159878e-09, global = 5.18579682645e-20, cumulative = 9.62133233165e-19
+DICPCG:  Solving for p, Initial residual = 0.222028821786, Final residual = 0.00215718735866, No Iterations 35
+time step continuity errors : sum local = 4.6038755499e-09, global = 1.29459206142e-20, cumulative = 9.7507915378e-19
+DICPCG:  Solving for p, Initial residual = 0.00328761731102, Final residual = 2.86573756758e-05, No Iterations 84
+time step continuity errors : sum local = 7.39797862576e-11, global = 1.73969600542e-20, cumulative = 9.92476113834e-19
+DICPCG:  Solving for p, Initial residual = 0.000774446553267, Final residual = 8.67515078941e-13, No Iterations 199
+time step continuity errors : sum local = 5.58973589741e-18, global = 9.92982176871e-21, cumulative = 1.0024059356e-18
+ExecutionTime = 17.34 s  ClockTime = 64 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0757488761713 max: 0.0934327708684
+Time = 0.255
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269841803, Final residual = 7.93509775379e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269783497, Final residual = 8.01936338449e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296527745, Final residual = 0.00223062118967, No Iterations 35
+time step continuity errors : sum local = 4.74732073576e-09, global = -7.79874008759e-21, cumulative = 9.94607195515e-19
+DICPCG:  Solving for p, Initial residual = 0.222029000845, Final residual = 0.00215720504296, No Iterations 35
+time step continuity errors : sum local = 4.46886334766e-09, global = 2.65396137241e-20, cumulative = 1.02114680924e-18
+DICPCG:  Solving for p, Initial residual = 0.00328764366175, Final residual = 2.86242033897e-05, No Iterations 84
+time step continuity errors : sum local = 7.17269282433e-11, global = -1.04793295246e-20, cumulative = 1.01066747971e-18
+DICPCG:  Solving for p, Initial residual = 0.000774449057125, Final residual = 8.67136333511e-13, No Iterations 199
+time step continuity errors : sum local = 5.44698393087e-18, global = 2.44275634892e-20, cumulative = 1.0350950432e-18
+ExecutionTime = 17.89 s  ClockTime = 64 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0746296736054 max: 0.0920522862986
+Time = 0.2625
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269821977, Final residual = 7.93016369269e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269764709, Final residual = 8.01312893959e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296402231, Final residual = 0.00223065463613, No Iterations 35
+time step continuity errors : sum local = 4.60812276731e-09, global = 3.64589816788e-20, cumulative = 1.07155402488e-18
+DICPCG:  Solving for p, Initial residual = 0.222029172017, Final residual = 0.0021572224329, No Iterations 35
+time step continuity errors : sum local = 4.33780993858e-09, global = 3.76339269488e-20, cumulative = 1.10918795183e-18
+DICPCG:  Solving for p, Initial residual = 0.00328766920323, Final residual = 2.85914764337e-05, No Iterations 84
+time step continuity errors : sum local = 6.95436583732e-11, global = -1.15326575562e-20, cumulative = 1.09765529428e-18
+DICPCG:  Solving for p, Initial residual = 0.000774451337211, Final residual = 8.66756928978e-13, No Iterations 199
+time step continuity errors : sum local = 5.40883201218e-18, global = 3.26447703012e-20, cumulative = 1.13030006458e-18
+ExecutionTime = 18.35 s  ClockTime = 65 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.073527006918 max: 0.0906921979237
+Time = 0.27
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269801689, Final residual = 7.92539593225e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269745436, Final residual = 8.00705891057e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296273584, Final residual = 0.00223068795696, No Iterations 35
+time step continuity errors : sum local = 4.47300621495e-09, global = 4.43821684091e-20, cumulative = 1.17468223299e-18
+DICPCG:  Solving for p, Initial residual = 0.222029338006, Final residual = 0.00215723947716, No Iterations 35
+time step continuity errors : sum local = 4.21059916619e-09, global = -3.35950305827e-20, cumulative = 1.1410872024e-18
+DICPCG:  Solving for p, Initial residual = 0.0032876945116, Final residual = 2.85593715707e-05, No Iterations 84
+time step continuity errors : sum local = 6.74282169731e-11, global = 1.21542276158e-20, cumulative = 1.15324143002e-18
+DICPCG:  Solving for p, Initial residual = 0.000774453568396, Final residual = 8.66375545811e-13, No Iterations 199
+time step continuity errors : sum local = 5.29128492946e-18, global = 3.40705708916e-22, cumulative = 1.15358213573e-18
+ExecutionTime = 18.75 s  ClockTime = 65 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0724406318211 max: 0.0893522044325
+Time = 0.2775
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269781007, Final residual = 7.9207758502e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269725749, Final residual = 8.00114427652e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296143194, Final residual = 0.00223072042524, No Iterations 35
+time step continuity errors : sum local = 4.34185001893e-09, global = 5.88253373005e-21, cumulative = 1.15946466946e-18
+DICPCG:  Solving for p, Initial residual = 0.222029497685, Final residual = 0.00215725591437, No Iterations 35
+time step continuity errors : sum local = 4.08711787883e-09, global = -1.1611139541e-20, cumulative = 1.14785352992e-18
+DICPCG:  Solving for p, Initial residual = 0.00328771910553, Final residual = 2.852788011e-05, No Iterations 84
+time step continuity errors : sum local = 6.53784413145e-11, global = 5.74563409436e-21, cumulative = 1.15359916401e-18
+DICPCG:  Solving for p, Initial residual = 0.000774455727943, Final residual = 8.65994161382e-13, No Iterations 199
+time step continuity errors : sum local = 5.20675218345e-18, global = -2.0946756934e-20, cumulative = 1.13265240708e-18
+ExecutionTime = 19.2 s  ClockTime = 66 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0713703076344 max: 0.088032008973
+Time = 0.285
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0074426976, Final residual = 7.91630840428e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269705716, Final residual = 7.99538019722e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236296010514, Final residual = 0.0022307520444, No Iterations 35
+time step continuity errors : sum local = 4.21453814518e-09, global = 2.92424592816e-20, cumulative = 1.16189486636e-18
+DICPCG:  Solving for p, Initial residual = 0.222029651075, Final residual = 0.00215727174957, No Iterations 35
+time step continuity errors : sum local = 3.96725678333e-09, global = -1.46942394274e-20, cumulative = 1.14720062693e-18
+DICPCG:  Solving for p, Initial residual = 0.00328774296091, Final residual = 2.84969314933e-05, No Iterations 84
+time step continuity errors : sum local = 6.33921020075e-11, global = -1.91777716404e-20, cumulative = 1.12802285529e-18
+DICPCG:  Solving for p, Initial residual = 0.000774457672528, Final residual = 8.65613683402e-13, No Iterations 199
+time step continuity errors : sum local = 5.14885619773e-18, global = 1.29047414257e-20, cumulative = 1.14092759672e-18
+ExecutionTime = 19.72 s  ClockTime = 66 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0703157972321 max: 0.0867313190579
+Time = 0.2925
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269738727, Final residual = 7.91198222791e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269685397, Final residual = 7.98976363621e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236295875896, Final residual = 0.002230783077, No Iterations 35
+time step continuity errors : sum local = 4.09095842367e-09, global = -1.1889412744e-20, cumulative = 1.12903818397e-18
+DICPCG:  Solving for p, Initial residual = 0.222029802166, Final residual = 0.00215728699006, No Iterations 35
+time step continuity errors : sum local = 3.85090979743e-09, global = -8.14022348551e-21, cumulative = 1.12089796049e-18
+DICPCG:  Solving for p, Initial residual = 0.00328776578586, Final residual = 2.84665349423e-05, No Iterations 84
+time step continuity errors : sum local = 6.14672255031e-11, global = -6.31971322073e-21, cumulative = 1.11457824727e-18
+DICPCG:  Solving for p, Initial residual = 0.000774459514176, Final residual = 8.65234825628e-13, No Iterations 199
+time step continuity errors : sum local = 5.12392087447e-18, global = -5.89547551328e-20, cumulative = 1.05562349213e-18
+ExecutionTime = 20.25 s  ClockTime = 67 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+Courant Number mean: 0.0692768669904 max: 0.0854498465267
+Time = 0.3
+
+PIMPLE: iteration 1
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00744269717246, Final residual = 7.90778843722e-09, No Iterations 7
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00744269664849, Final residual = 7.98430040357e-09, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.236295739024, Final residual = 0.00223081340659, No Iterations 35
+time step continuity errors : sum local = 3.97100126608e-09, global = 6.62751602236e-21, cumulative = 1.06225100816e-18
+DICPCG:  Solving for p, Initial residual = 0.222029948867, Final residual = 0.00215730150292, No Iterations 35
+time step continuity errors : sum local = 3.73797368645e-09, global = 2.79395154883e-20, cumulative = 1.09019052364e-18
+DICPCG:  Solving for p, Initial residual = 0.00328778772534, Final residual = 2.84367126747e-05, No Iterations 84
+time step continuity errors : sum local = 5.96019270289e-11, global = 4.59914354794e-21, cumulative = 1.09478966719e-18
+DICPCG:  Solving for p, Initial residual = 0.000774461311708, Final residual = 8.64856858236e-13, No Iterations 199
+time step continuity errors : sum local = 5.00644268684e-18, global = -6.96253390307e-22, cumulative = 1.0940934138e-18
+ExecutionTime = 20.68 s  ClockTime = 67 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 0.000112902789793
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.0102241813835
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.00760676722983
+
+End
+

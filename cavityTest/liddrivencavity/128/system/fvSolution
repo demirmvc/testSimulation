@@ -1,0 +1,71 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+solvers
+{
+    p
+    {
+        solver          PCG;  // Preconditioned Conjugate Gradient method
+        preconditioner  DIC;  // Diagonal Incomplete Cholesky preconditioner
+        tolerance       1e-6; // Convergence criterion
+        relTol          0;    // Relative tolerance
+    }
+    pFinal
+	{
+	$p;
+	}
+
+    U
+    {
+        solver          smoothSolver; // Solver for velocity
+        smoother        symGaussSeidel; // Symmetric Gauss-Seidel smoother
+        tolerance       1e-5;  // Convergence criterion
+        relTol          0;     // Relative tolerance
+    }
+
+	UFinal
+	{
+	$U;
+	
+	}
+
+
+	
+
+}
+
+PIMPLE
+{
+    nCorrectors     2;  // Number of corrector steps
+    nNonOrthogonalCorrectors 0; // For non-orthogonal meshes, set this > 0
+    pRefCell        0;  // Reference cell for pressure
+    pRefValue       0;  // Reference value for pressure
+}
+
+relaxationFactors
+{
+    fields
+    {
+        p           0.3;  // Relaxation factor for pressure
+    }
+    equations
+    {
+        U           0.7;  // Relaxation factor for velocity
+    }
+}
+
+
+
+// ************************************************************************* //

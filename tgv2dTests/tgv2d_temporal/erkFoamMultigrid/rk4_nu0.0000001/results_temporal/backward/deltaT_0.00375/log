@@ -1,0 +1,1687 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _630d60de3b-20240620 OPENFOAM=2406 version=v2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : erkFoam
+Date   : Sep 10 2024
+Time   : 00:26:58
+Host   : hakan-X556UQK
+PID    : 13401
+I/O    : uncollated
+Case   : /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading field p
+
+Using #codeStream at line 19 in file "0/p"
+Using #codeStream with "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so"
+Creating new library in "dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e/platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_537564b8bd232f4ddf4797bc6f60eef024868c2e/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_537564b8bd232f4ddf4797bc6f60eef024868c2e.so
+Reading field U
+
+Using #codeStream at line 19 in file "0/U"
+Using #codeStream with "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so"
+Creating new library in "dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03/platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_18dd48bdf5aea29696d9cbfe8eb27bc690b7dc03.so
+Reading field dU1
+
+Using #codeStream at line 19 in file "0/dU1"
+Reading field dU2
+
+Using #codeStream at line 19 in file "0/dU2"
+Reading field dU3
+
+Using #codeStream at line 19 in file "0/dU"
+Reading field Uold
+
+Using #codeStream at line 19 in file "0/Uold"
+Reading field dU
+
+Using #codeStream at line 19 in file "0/dU"
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+No finite volume options present
+
+Starting time loop
+
+Using dynamicCode for functionObject diff at line 51 in "/home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/system/controlDict/functions/diff"
+Creating new library in "dynamicCode/diff/platforms/linux64GccDPInt32Opt/lib/libdiff_d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8.so"
+Invoking wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/diff
+wmake libso /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/diff
+    dep: functionObjectTemplate.C
+    Ctoo: functionObjectTemplate.C
+    link: /home/hakan/courses/testSimulation/tgv2dTests/tgv2d_temporal/rk4FoamMultigrid/rk4_nu0.0000001/TGV_temporal/dynamicCode/diff/../platforms/linux64GccDPInt32Opt/lib/libdiff_d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8.so
+Time = 0.00375
+
+Courant Number mean: 0.0618980796527 max: 0.0763483625043
+GAMG:  Solving for p, Initial residual = 0.000903861403681, Final residual = 6.58321213298e-06, No Iterations 6
+time step continuity errors : sum local = 1.99356816892e-14, global = 2.79516733735e-20, cumulative = 2.79516733735e-20
+GAMG:  Solving for p, Initial residual = 1.14208607857e-05, Final residual = 9.08876980108e-08, No Iterations 6
+time step continuity errors : sum local = 1.36338452084e-08, global = 3.71484857263e-20, cumulative = 6.51001590998e-20
+GAMG:  Solving for p, Initial residual = 4.46595504872e-06, Final residual = 4.41126819404e-08, No Iterations 5
+time step continuity errors : sum local = 2.73601521523e-08, global = 1.37310445389e-20, cumulative = 7.88312036386e-20
+ExecutionTime = 0.65 s  ClockTime = 28 s
+
+    Reading error_velocity_mag (volScalarField)
+    Reading error_velocity_mag_squ (volScalarField)
+    Reading error_pres (volScalarField)
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0075
+
+Courant Number mean: 0.0618980788404 max: 0.0763483627128
+GAMG:  Solving for p, Initial residual = 0.00241546628918, Final residual = 1.77398314147e-05, No Iterations 6
+time step continuity errors : sum local = 2.73611617032e-08, global = 5.32860434619e-20, cumulative = 1.32117247101e-19
+GAMG:  Solving for p, Initial residual = 0.00118854053131, Final residual = 8.51739263372e-06, No Iterations 6
+time step continuity errors : sum local = 1.38850035533e-08, global = 1.99798525438e-20, cumulative = 1.52097099644e-19
+GAMG:  Solving for p, Initial residual = 1.01982295414e-05, Final residual = 5.11644644462e-08, No Iterations 7
+time step continuity errors : sum local = 2.73056269717e-08, global = 5.33327093815e-20, cumulative = 2.05429809026e-19
+ExecutionTime = 1.1 s  ClockTime = 28 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.01125
+
+Courant Number mean: 0.0618980777684 max: 0.0763483630013
+GAMG:  Solving for p, Initial residual = 0.0047875100076, Final residual = 3.44495848652e-05, No Iterations 6
+time step continuity errors : sum local = 2.74264974154e-08, global = 5.17360108061e-20, cumulative = 2.57165819832e-19
+GAMG:  Solving for p, Initial residual = 0.00118120397525, Final residual = 8.33057873326e-06, No Iterations 6
+time step continuity errors : sum local = 1.40173873278e-08, global = -8.87638088094e-21, cumulative = 2.48289438951e-19
+GAMG:  Solving for p, Initial residual = 1.00440599252e-05, Final residual = 5.11890325591e-08, No Iterations 7
+time step continuity errors : sum local = 2.73083089115e-08, global = 1.18547527385e-20, cumulative = 2.60144191689e-19
+ExecutionTime = 1.44 s  ClockTime = 29 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.015
+
+Courant Number mean: 0.0618980766872 max: 0.076348363303
+GAMG:  Solving for p, Initial residual = 0.00476220070307, Final residual = 3.38641162346e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266461832e-08, global = -4.59377703004e-21, cumulative = 2.55550414659e-19
+GAMG:  Solving for p, Initial residual = 0.00118154539407, Final residual = 8.33669972701e-06, No Iterations 6
+time step continuity errors : sum local = 1.40129054605e-08, global = 5.70611554376e-21, cumulative = 2.61256530203e-19
+GAMG:  Solving for p, Initial residual = 1.00497486776e-05, Final residual = 5.0961336046e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082313804e-08, global = 2.58497010984e-20, cumulative = 2.87106231302e-19
+ExecutionTime = 1.75 s  ClockTime = 29 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.01875
+
+Courant Number mean: 0.0618980756061 max: 0.0763483636055
+GAMG:  Solving for p, Initial residual = 0.0047632425286, Final residual = 3.38824935665e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266513168e-08, global = 2.16586187708e-20, cumulative = 3.08764850072e-19
+GAMG:  Solving for p, Initial residual = 0.00118153584923, Final residual = 8.33667564074e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130380403e-08, global = -3.56698599732e-20, cumulative = 2.73094990099e-19
+GAMG:  Solving for p, Initial residual = 1.00496922552e-05, Final residual = 5.10100935526e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082305041e-08, global = -7.05942721107e-21, cumulative = 2.66035562888e-19
+ExecutionTime = 2.1 s  ClockTime = 29 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0225
+
+Courant Number mean: 0.061898074525 max: 0.0763483639081
+GAMG:  Solving for p, Initial residual = 0.00476321289241, Final residual = 3.38824386794e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266506927e-08, global = -1.69771419953e-20, cumulative = 2.49058420893e-19
+GAMG:  Solving for p, Initial residual = 0.00118153573908, Final residual = 8.33664258798e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130384713e-08, global = -6.86129819913e-21, cumulative = 2.42197122694e-19
+GAMG:  Solving for p, Initial residual = 1.00496710876e-05, Final residual = 5.10012166849e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082306431e-08, global = 1.37290330768e-20, cumulative = 2.5592615577e-19
+ExecutionTime = 2.43 s  ClockTime = 30 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.02625
+
+Courant Number mean: 0.061898073444 max: 0.076348364211
+GAMG:  Solving for p, Initial residual = 0.0047632126471, Final residual = 3.38823351682e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266508577e-08, global = 1.00830569648e-20, cumulative = 2.66009212735e-19
+GAMG:  Solving for p, Initial residual = 0.00118153583781, Final residual = 8.33664951301e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130372019e-08, global = 2.67419856638e-20, cumulative = 2.92751198399e-19
+GAMG:  Solving for p, Initial residual = 1.00496781232e-05, Final residual = 5.10027653454e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082300546e-08, global = -1.09580429566e-20, cumulative = 2.81793155442e-19
+ExecutionTime = 2.73 s  ClockTime = 30 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.03
+
+Courant Number mean: 0.061898072363 max: 0.0763483645139
+GAMG:  Solving for p, Initial residual = 0.00476321297008, Final residual = 3.38823567554e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426650696e-08, global = -5.64657626707e-21, cumulative = 2.76146579175e-19
+GAMG:  Solving for p, Initial residual = 0.00118153583471, Final residual = 8.33664824616e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130370813e-08, global = 5.31086325091e-21, cumulative = 2.81457442426e-19
+GAMG:  Solving for p, Initial residual = 1.00496789235e-05, Final residual = 5.10025064525e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082295768e-08, global = 1.13679789224e-20, cumulative = 2.92825421349e-19
+ExecutionTime = 3.06 s  ClockTime = 30 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.03375
+
+Courant Number mean: 0.061898071282 max: 0.076348364817
+GAMG:  Solving for p, Initial residual = 0.00476321299501, Final residual = 3.38823527936e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266504685e-08, global = 9.93340418827e-21, cumulative = 3.02758825537e-19
+GAMG:  Solving for p, Initial residual = 0.00118153585108, Final residual = 8.33664840532e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130367262e-08, global = -4.11959496635e-20, cumulative = 2.61562875873e-19
+GAMG:  Solving for p, Initial residual = 1.0049680724e-05, Final residual = 5.10025514419e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082290574e-08, global = -4.82227911894e-21, cumulative = 2.56740596754e-19
+ExecutionTime = 3.38 s  ClockTime = 31 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0375
+
+Courant Number mean: 0.061898070201 max: 0.0763483651203
+GAMG:  Solving for p, Initial residual = 0.00476321307771, Final residual = 3.38823532842e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266501696e-08, global = -6.91862486756e-21, cumulative = 2.49821971887e-19
+GAMG:  Solving for p, Initial residual = 0.00118153586388, Final residual = 8.33664832678e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130364074e-08, global = 2.82908114424e-20, cumulative = 2.78112783329e-19
+GAMG:  Solving for p, Initial residual = 1.00496822844e-05, Final residual = 5.10025466266e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082285283e-08, global = 3.53619051334e-20, cumulative = 3.13474688463e-19
+ExecutionTime = 3.78 s  ClockTime = 31 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.04125
+
+Courant Number mean: 0.0618980691201 max: 0.0763483654237
+GAMG:  Solving for p, Initial residual = 0.00476321314957, Final residual = 3.38823530336e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266498135e-08, global = -2.61892358924e-21, cumulative = 3.10855764873e-19
+GAMG:  Solving for p, Initial residual = 0.00118153587707, Final residual = 8.33664828515e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130360808e-08, global = -9.15516952108e-21, cumulative = 3.01700595352e-19
+GAMG:  Solving for p, Initial residual = 1.0049683826e-05, Final residual = 5.10025498476e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082279885e-08, global = 2.25565354299e-20, cumulative = 3.24257130782e-19
+ExecutionTime = 4.17 s  ClockTime = 31 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.045
+
+Courant Number mean: 0.0618980680392 max: 0.0763483657274
+GAMG:  Solving for p, Initial residual = 0.0047632132221, Final residual = 3.38823528988e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266494104e-08, global = 3.50718523057e-21, cumulative = 3.27764316013e-19
+GAMG:  Solving for p, Initial residual = 0.00118153589001, Final residual = 8.33664823681e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130357548e-08, global = 2.80544646515e-20, cumulative = 3.55818780664e-19
+GAMG:  Solving for p, Initial residual = 1.00496853295e-05, Final residual = 5.10025519761e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082274407e-08, global = 3.25728118547e-20, cumulative = 3.88391592519e-19
+ExecutionTime = 4.6 s  ClockTime = 32 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.04875
+
+Courant Number mean: 0.0618980669583 max: 0.0763483660312
+GAMG:  Solving for p, Initial residual = 0.00476321329335, Final residual = 3.38823527473e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266489733e-08, global = 7.81171401781e-21, cumulative = 3.96203306537e-19
+GAMG:  Solving for p, Initial residual = 0.00118153590283, Final residual = 8.33664819005e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130354288e-08, global = 3.96258023872e-20, cumulative = 4.35829108924e-19
+GAMG:  Solving for p, Initial residual = 1.00496868029e-05, Final residual = 5.10025543502e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082268869e-08, global = 1.88683186149e-20, cumulative = 4.54697427539e-19
+ExecutionTime = 4.99 s  ClockTime = 32 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0525
+
+Courant Number mean: 0.0618980658775 max: 0.0763483663352
+GAMG:  Solving for p, Initial residual = 0.00476321336365, Final residual = 3.38823526002e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266485086e-08, global = -2.58231497993e-21, cumulative = 4.52115112559e-19
+GAMG:  Solving for p, Initial residual = 0.00118153591549, Final residual = 8.33664814243e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130351036e-08, global = -7.80547848546e-21, cumulative = 4.44309634074e-19
+GAMG:  Solving for p, Initial residual = 1.00496882494e-05, Final residual = 5.10025562439e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082263281e-08, global = 3.3635668402e-20, cumulative = 4.77945302476e-19
+ExecutionTime = 5.35 s  ClockTime = 33 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.05625
+
+Courant Number mean: 0.0618980647968 max: 0.0763483666395
+GAMG:  Solving for p, Initial residual = 0.00476321343299, Final residual = 3.38823524538e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266480234e-08, global = 4.0123035806e-20, cumulative = 5.18068338282e-19
+GAMG:  Solving for p, Initial residual = 0.00118153592801, Final residual = 8.3366480952e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130347792e-08, global = -6.48133301787e-21, cumulative = 5.11587005264e-19
+GAMG:  Solving for p, Initial residual = 1.00496896806e-05, Final residual = 5.10025586085e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082257654e-08, global = -1.39177082171e-20, cumulative = 4.97669297047e-19
+ExecutionTime = 5.65 s  ClockTime = 33 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.06
+
+Courant Number mean: 0.0618980637161 max: 0.0763483669441
+GAMG:  Solving for p, Initial residual = 0.00476321350145, Final residual = 3.38823523091e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266475248e-08, global = 1.16049291519e-20, cumulative = 5.09274226198e-19
+GAMG:  Solving for p, Initial residual = 0.00118153594038, Final residual = 8.33664804801e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130344556e-08, global = -1.64638168802e-20, cumulative = 4.92810409318e-19
+GAMG:  Solving for p, Initial residual = 1.004969109e-05, Final residual = 5.10025610417e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082251998e-08, global = 2.9663030853e-20, cumulative = 5.22473440171e-19
+ExecutionTime = 5.96 s  ClockTime = 33 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.06375
+
+Courant Number mean: 0.0618980626354 max: 0.076348367249
+GAMG:  Solving for p, Initial residual = 0.00476321356911, Final residual = 3.38823521659e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266470145e-08, global = -3.56229929075e-20, cumulative = 4.86850447264e-19
+GAMG:  Solving for p, Initial residual = 0.00118153595259, Final residual = 8.33664800074e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130341332e-08, global = 1.5439379258e-20, cumulative = 5.02289826522e-19
+GAMG:  Solving for p, Initial residual = 1.00496924815e-05, Final residual = 5.10025636247e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082246317e-08, global = -1.82568341516e-20, cumulative = 4.8403299237e-19
+ExecutionTime = 6.32 s  ClockTime = 34 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0675
+
+Courant Number mean: 0.0618980615548 max: 0.0763483675541
+GAMG:  Solving for p, Initial residual = 0.00476321363601, Final residual = 3.38823520234e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266464936e-08, global = -6.78425920262e-21, cumulative = 4.77248733168e-19
+GAMG:  Solving for p, Initial residual = 0.00118153596467, Final residual = 8.33664795317e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130338118e-08, global = 3.18032264743e-21, cumulative = 4.80429055815e-19
+GAMG:  Solving for p, Initial residual = 1.00496938549e-05, Final residual = 5.10025658205e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082240618e-08, global = -6.46725278352e-21, cumulative = 4.73961803031e-19
+ExecutionTime = 6.77 s  ClockTime = 34 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.07125
+
+Courant Number mean: 0.0618980604743 max: 0.0763483678597
+GAMG:  Solving for p, Initial residual = 0.00476321370225, Final residual = 3.38823518808e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266459643e-08, global = 1.74433988986e-20, cumulative = 4.9140520193e-19
+GAMG:  Solving for p, Initial residual = 0.00118153597661, Final residual = 8.33664790571e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130334915e-08, global = -4.75917955442e-20, cumulative = 4.43813406386e-19
+GAMG:  Solving for p, Initial residual = 1.00496952121e-05, Final residual = 5.10025686293e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082234902e-08, global = 2.33957173973e-20, cumulative = 4.67209123783e-19
+ExecutionTime = 7.14 s  ClockTime = 34 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.075
+
+Courant Number mean: 0.0618980593939 max: 0.0763483681655
+GAMG:  Solving for p, Initial residual = 0.00476321376789, Final residual = 3.38823517383e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266454294e-08, global = 7.04494468431e-21, cumulative = 4.74254068467e-19
+GAMG:  Solving for p, Initial residual = 0.00118153598841, Final residual = 8.33664785797e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130331721e-08, global = -2.6620493356e-20, cumulative = 4.47633575111e-19
+GAMG:  Solving for p, Initial residual = 1.00496965567e-05, Final residual = 5.10025710141e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082229177e-08, global = 6.73839786787e-22, cumulative = 4.48307414898e-19
+ExecutionTime = 7.43 s  ClockTime = 35 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.07875
+
+Courant Number mean: 0.0618980583135 max: 0.0763483684717
+GAMG:  Solving for p, Initial residual = 0.0047632138329, Final residual = 3.38823515946e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266448889e-08, global = 7.87768997306e-21, cumulative = 4.56185104871e-19
+GAMG:  Solving for p, Initial residual = 0.00118153600007, Final residual = 8.3366478096e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130328537e-08, global = 3.94648854232e-20, cumulative = 4.95649990294e-19
+GAMG:  Solving for p, Initial residual = 1.00496978832e-05, Final residual = 5.10025736313e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082223443e-08, global = 2.50447139859e-20, cumulative = 5.2069470428e-19
+ExecutionTime = 7.73 s  ClockTime = 35 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0825
+
+Courant Number mean: 0.0618980572332 max: 0.0763483687784
+GAMG:  Solving for p, Initial residual = 0.00476321389723, Final residual = 3.38823514493e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266443466e-08, global = 1.62518087801e-20, cumulative = 5.3694651306e-19
+GAMG:  Solving for p, Initial residual = 0.00118153601158, Final residual = 8.33664776075e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130325362e-08, global = -7.77228936163e-22, cumulative = 5.36169284124e-19
+GAMG:  Solving for p, Initial residual = 1.00496991914e-05, Final residual = 5.10025762744e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082217703e-08, global = -1.12199353155e-20, cumulative = 5.24949348809e-19
+ExecutionTime = 8.03 s  ClockTime = 35 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.08625
+
+Courant Number mean: 0.061898056153 max: 0.0763483690855
+GAMG:  Solving for p, Initial residual = 0.00476321396092, Final residual = 3.38823513015e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266438042e-08, global = 3.00528521983e-20, cumulative = 5.55002201007e-19
+GAMG:  Solving for p, Initial residual = 0.00118153602294, Final residual = 8.33664771111e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130322197e-08, global = -1.38368474427e-20, cumulative = 5.41165353564e-19
+GAMG:  Solving for p, Initial residual = 1.00497004862e-05, Final residual = 5.1002578986e-08, No Iterations 7
+time step continuity errors : sum local = 2.7308221196e-08, global = 8.10136455303e-21, cumulative = 5.49266718117e-19
+ExecutionTime = 8.31 s  ClockTime = 36 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.09
+
+Courant Number mean: 0.0618980550728 max: 0.0763483693932
+GAMG:  Solving for p, Initial residual = 0.00476321402404, Final residual = 3.38823511511e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266432619e-08, global = 1.83469476515e-20, cumulative = 5.67613665769e-19
+GAMG:  Solving for p, Initial residual = 0.00118153603416, Final residual = 8.3366476616e-06, No Iterations 6
+time step continuity errors : sum local = 1.4013031904e-08, global = -2.08359307923e-20, cumulative = 5.46777734977e-19
+GAMG:  Solving for p, Initial residual = 1.00497017631e-05, Final residual = 5.10025818129e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082206215e-08, global = 5.33882257341e-21, cumulative = 5.5211655755e-19
+ExecutionTime = 8.6 s  ClockTime = 36 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.09375
+
+Courant Number mean: 0.0618980539928 max: 0.0763483697013
+GAMG:  Solving for p, Initial residual = 0.00476321408677, Final residual = 3.38823509984e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266427181e-08, global = 4.59413909321e-20, cumulative = 5.98057948482e-19
+GAMG:  Solving for p, Initial residual = 0.00118153604525, Final residual = 8.33664761126e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130315892e-08, global = -1.08248841689e-20, cumulative = 5.87233064313e-19
+GAMG:  Solving for p, Initial residual = 1.00497030224e-05, Final residual = 5.10025846896e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082200469e-08, global = 3.17448940749e-20, cumulative = 6.18977958388e-19
+ExecutionTime = 8.89 s  ClockTime = 36 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.0975
+
+Courant Number mean: 0.0618980529128 max: 0.0763483700099
+GAMG:  Solving for p, Initial residual = 0.00476321414917, Final residual = 3.38823508446e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266421735e-08, global = -1.23918131059e-20, cumulative = 6.06586145282e-19
+GAMG:  Solving for p, Initial residual = 0.00118153605619, Final residual = 8.33664756032e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130312753e-08, global = -7.64999246898e-21, cumulative = 5.98936152813e-19
+GAMG:  Solving for p, Initial residual = 1.00497042674e-05, Final residual = 5.10025875511e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082194725e-08, global = 3.22103463933e-20, cumulative = 6.31146499206e-19
+ExecutionTime = 9.19 s  ClockTime = 36 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.10125
+
+Courant Number mean: 0.061898051833 max: 0.076348370319
+GAMG:  Solving for p, Initial residual = 0.00476321421127, Final residual = 3.38823506888e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266416281e-08, global = -2.10938002271e-20, cumulative = 6.10052698979e-19
+GAMG:  Solving for p, Initial residual = 0.00118153606701, Final residual = 8.33664750872e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130309622e-08, global = -1.10187891105e-21, cumulative = 6.08950820068e-19
+GAMG:  Solving for p, Initial residual = 1.00497054941e-05, Final residual = 5.10025906794e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082188984e-08, global = 2.00506560079e-20, cumulative = 6.29001476076e-19
+ExecutionTime = 9.48 s  ClockTime = 37 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.105
+
+Courant Number mean: 0.0618980507532 max: 0.0763483706287
+GAMG:  Solving for p, Initial residual = 0.0047632142731, Final residual = 3.38823505315e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426641083e-08, global = -4.52611144668e-20, cumulative = 5.83740361609e-19
+GAMG:  Solving for p, Initial residual = 0.0011815360777, Final residual = 8.33664745693e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130306499e-08, global = -1.49298759207e-20, cumulative = 5.68810485689e-19
+GAMG:  Solving for p, Initial residual = 1.00497067017e-05, Final residual = 5.10025935852e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082183246e-08, global = -2.1916890498e-21, cumulative = 5.66618796639e-19
+ExecutionTime = 9.76 s  ClockTime = 37 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.10875
+
+Courant Number mean: 0.0618980496736 max: 0.0763483709389
+GAMG:  Solving for p, Initial residual = 0.00476321433471, Final residual = 3.38823503729e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266405382e-08, global = -5.63048457067e-21, cumulative = 5.60988312068e-19
+GAMG:  Solving for p, Initial residual = 0.00118153608824, Final residual = 8.33664740422e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130303385e-08, global = -1.33412231936e-20, cumulative = 5.47647088875e-19
+GAMG:  Solving for p, Initial residual = 1.00497078939e-05, Final residual = 5.10025967673e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082177512e-08, global = 1.5733656156e-20, cumulative = 5.63380745031e-19
+ExecutionTime = 10.05 s  ClockTime = 37 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1125
+
+Courant Number mean: 0.061898048594 max: 0.0763483712497
+GAMG:  Solving for p, Initial residual = 0.0047632143961, Final residual = 3.38823502122e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266399926e-08, global = -7.20151689029e-20, cumulative = 4.91365576128e-19
+GAMG:  Solving for p, Initial residual = 0.00118153609866, Final residual = 8.3366473511e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130300278e-08, global = -1.03107544689e-20, cumulative = 4.81054821659e-19
+GAMG:  Solving for p, Initial residual = 1.00497090723e-05, Final residual = 5.10026000221e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082171784e-08, global = 2.1232993401e-21, cumulative = 4.83178120999e-19
+ExecutionTime = 10.34 s  ClockTime = 38 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.11625
+
+Courant Number mean: 0.0618980475146 max: 0.076348371561
+GAMG:  Solving for p, Initial residual = 0.00476321445733, Final residual = 3.38823500506e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266394467e-08, global = 3.72353808868e-20, cumulative = 5.20413501886e-19
+GAMG:  Solving for p, Initial residual = 0.00118153610895, Final residual = 8.33664729796e-06, No Iterations 6
+time step continuity errors : sum local = 1.4013029718e-08, global = 3.30241839387e-20, cumulative = 5.53437685824e-19
+GAMG:  Solving for p, Initial residual = 1.00497102226e-05, Final residual = 5.10026028055e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082166064e-08, global = -5.11675716307e-21, cumulative = 5.48320928661e-19
+ExecutionTime = 10.65 s  ClockTime = 38 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.12
+
+Courant Number mean: 0.0618980464353 max: 0.076348371873
+GAMG:  Solving for p, Initial residual = 0.00476321451839, Final residual = 3.38823498875e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426638901e-08, global = 1.74876510637e-21, cumulative = 5.50069693768e-19
+GAMG:  Solving for p, Initial residual = 0.0011815361191, Final residual = 8.33664724389e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130294087e-08, global = -2.39685817891e-20, cumulative = 5.26101111979e-19
+GAMG:  Solving for p, Initial residual = 1.00497113651e-05, Final residual = 5.10026062207e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082160348e-08, global = 2.52559175012e-21, cumulative = 5.28626703729e-19
+ExecutionTime = 10.94 s  ClockTime = 38 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.12375
+
+Courant Number mean: 0.0618980453561 max: 0.0763483721856
+GAMG:  Solving for p, Initial residual = 0.00476321457935, Final residual = 3.38823497232e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266383583e-08, global = 5.04233306722e-21, cumulative = 5.33669036796e-19
+GAMG:  Solving for p, Initial residual = 0.00118153612914, Final residual = 8.33664718871e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130291004e-08, global = 3.35240322582e-20, cumulative = 5.67193069054e-19
+GAMG:  Solving for p, Initial residual = 1.00497124839e-05, Final residual = 5.10026094098e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082154641e-08, global = -1.44644236024e-20, cumulative = 5.52728645452e-19
+ExecutionTime = 11.24 s  ClockTime = 38 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1275
+
+Courant Number mean: 0.061898044277 max: 0.0763483724989
+GAMG:  Solving for p, Initial residual = 0.00476321464018, Final residual = 3.38823495573e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266378178e-08, global = 2.79275413962e-20, cumulative = 5.80656186848e-19
+GAMG:  Solving for p, Initial residual = 0.00118153613905, Final residual = 8.3366471343e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130287929e-08, global = 2.13206931464e-20, cumulative = 6.01976879994e-19
+GAMG:  Solving for p, Initial residual = 1.00497135884e-05, Final residual = 5.10026120635e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082148944e-08, global = 7.48304111882e-21, cumulative = 6.09459921113e-19
+ExecutionTime = 11.54 s  ClockTime = 39 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.13125
+
+Courant Number mean: 0.0618980431981 max: 0.0763483728129
+GAMG:  Solving for p, Initial residual = 0.00476321470093, Final residual = 3.38823493913e-05, No Iterations 6
+time step continuity errors : sum local = 2.742663728e-08, global = 3.21958638665e-20, cumulative = 6.4165578498e-19
+GAMG:  Solving for p, Initial residual = 0.00118153614884, Final residual = 8.33664707923e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130284861e-08, global = -1.52342101289e-20, cumulative = 6.26421574851e-19
+GAMG:  Solving for p, Initial residual = 1.004971467e-05, Final residual = 5.10026156255e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082143255e-08, global = -5.65880595634e-20, cumulative = 5.69833515287e-19
+ExecutionTime = 11.83 s  ClockTime = 39 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.135
+
+Courant Number mean: 0.0618980421192 max: 0.0763483731275
+GAMG:  Solving for p, Initial residual = 0.00476321476159, Final residual = 3.38823492239e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266367447e-08, global = 1.49878060278e-20, cumulative = 5.84821321315e-19
+GAMG:  Solving for p, Initial residual = 0.0011815361585, Final residual = 8.33664702331e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130281801e-08, global = 2.07665353516e-20, cumulative = 6.05587856667e-19
+GAMG:  Solving for p, Initial residual = 1.00497157343e-05, Final residual = 5.10026193324e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082137576e-08, global = -4.83446857896e-20, cumulative = 5.57243170877e-19
+ExecutionTime = 12.12 s  ClockTime = 39 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.13875
+
+Courant Number mean: 0.0618980410406 max: 0.0763483734429
+GAMG:  Solving for p, Initial residual = 0.00476321482218, Final residual = 3.38823490547e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266362105e-08, global = -3.35841749735e-20, cumulative = 5.23658995904e-19
+GAMG:  Solving for p, Initial residual = 0.00118153616804, Final residual = 8.33664696719e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130278748e-08, global = -5.0359366179e-20, cumulative = 4.73299629725e-19
+GAMG:  Solving for p, Initial residual = 1.0049716783e-05, Final residual = 5.10026227368e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082131907e-08, global = 3.76340526652e-20, cumulative = 5.1093368239e-19
+ExecutionTime = 12.55 s  ClockTime = 40 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1425
+
+Courant Number mean: 0.061898039962 max: 0.0763483737589
+GAMG:  Solving for p, Initial residual = 0.00476321488269, Final residual = 3.38823488857e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266356768e-08, global = 4.91114551231e-20, cumulative = 5.60045137513e-19
+GAMG:  Solving for p, Initial residual = 0.00118153617745, Final residual = 8.33664691077e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130275703e-08, global = 2.50451162783e-20, cumulative = 5.85090253791e-19
+GAMG:  Solving for p, Initial residual = 1.00497178109e-05, Final residual = 5.10026261977e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082126248e-08, global = 9.33760912903e-21, cumulative = 5.9442786292e-19
+ExecutionTime = 12.99 s  ClockTime = 40 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.14625
+
+Courant Number mean: 0.0618980388836 max: 0.0763483740758
+GAMG:  Solving for p, Initial residual = 0.00476321494317, Final residual = 3.3882348715e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266351439e-08, global = 1.69936359842e-20, cumulative = 6.11421498904e-19
+GAMG:  Solving for p, Initial residual = 0.00118153618674, Final residual = 8.33664685366e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130272666e-08, global = 1.16129750001e-20, cumulative = 6.23034473905e-19
+GAMG:  Solving for p, Initial residual = 1.00497188203e-05, Final residual = 5.10026298383e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082120602e-08, global = 3.23519533216e-20, cumulative = 6.55386427226e-19
+ExecutionTime = 13.35 s  ClockTime = 41 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.15
+
+Courant Number mean: 0.0618980378053 max: 0.076348374394
+GAMG:  Solving for p, Initial residual = 0.00476321500364, Final residual = 3.38823485444e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266346118e-08, global = 1.67043877414e-20, cumulative = 6.72090814967e-19
+GAMG:  Solving for p, Initial residual = 0.00118153619592, Final residual = 8.33664679676e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130269636e-08, global = 2.61011338547e-20, cumulative = 6.98191948822e-19
+GAMG:  Solving for p, Initial residual = 1.00497198122e-05, Final residual = 5.10026331004e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082114967e-08, global = 4.44372196111e-21, cumulative = 7.02635670783e-19
+ExecutionTime = 13.69 s  ClockTime = 41 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.15375
+
+Courant Number mean: 0.0618980367272 max: 0.0763483747132
+GAMG:  Solving for p, Initial residual = 0.00476321506405, Final residual = 3.3882348372e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266340808e-08, global = -1.35379441821e-20, cumulative = 6.89097726601e-19
+GAMG:  Solving for p, Initial residual = 0.00118153620498, Final residual = 8.33664673915e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130266615e-08, global = -4.34588444699e-20, cumulative = 6.45638882131e-19
+GAMG:  Solving for p, Initial residual = 1.00497207832e-05, Final residual = 5.10026370082e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082109345e-08, global = 1.68194433706e-20, cumulative = 6.62458325502e-19
+ExecutionTime = 14.06 s  ClockTime = 41 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1575
+
+Courant Number mean: 0.0618980356493 max: 0.0763483750333
+GAMG:  Solving for p, Initial residual = 0.00476321512445, Final residual = 3.38823481993e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266335529e-08, global = 2.63091190306e-20, cumulative = 6.88767444533e-19
+GAMG:  Solving for p, Initial residual = 0.00118153621392, Final residual = 8.33664668134e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130263601e-08, global = 2.99468481483e-20, cumulative = 7.18714292681e-19
+GAMG:  Solving for p, Initial residual = 1.00497217361e-05, Final residual = 5.10026405513e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082103736e-08, global = 2.03101346124e-20, cumulative = 7.39024427293e-19
+ExecutionTime = 14.45 s  ClockTime = 42 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.16125
+
+Courant Number mean: 0.0618980345715 max: 0.0763483753541
+GAMG:  Solving for p, Initial residual = 0.00476321518484, Final residual = 3.38823480259e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266330289e-08, global = 2.10644328812e-20, cumulative = 7.60088860174e-19
+GAMG:  Solving for p, Initial residual = 0.00118153622274, Final residual = 8.33664662318e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130260596e-08, global = -9.24065665821e-22, cumulative = 7.59164794509e-19
+GAMG:  Solving for p, Initial residual = 1.00497226644e-05, Final residual = 5.1002644133e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082098138e-08, global = -2.56859680875e-20, cumulative = 7.33478826421e-19
+ExecutionTime = 14.82 s  ClockTime = 42 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.165
+
+Courant Number mean: 0.0618980334938 max: 0.0763483756759
+GAMG:  Solving for p, Initial residual = 0.00476321524519, Final residual = 3.38823478521e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266325074e-08, global = -1.55880263035e-20, cumulative = 7.17890800117e-19
+GAMG:  Solving for p, Initial residual = 0.00118153623146, Final residual = 8.33664656476e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130257599e-08, global = -1.16644684286e-21, cumulative = 7.16724353275e-19
+GAMG:  Solving for p, Initial residual = 1.00497235796e-05, Final residual = 5.10026480673e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082092556e-08, global = 3.21673011054e-20, cumulative = 7.4889165438e-19
+ExecutionTime = 15.18 s  ClockTime = 42 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.16875
+
+Courant Number mean: 0.0618980324163 max: 0.0763483759985
+GAMG:  Solving for p, Initial residual = 0.00476321530557, Final residual = 3.3882347677e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266319881e-08, global = 3.24875258638e-20, cumulative = 7.81379180244e-19
+GAMG:  Solving for p, Initial residual = 0.00118153624004, Final residual = 8.33664650584e-06, No Iterations 6
+time step continuity errors : sum local = 1.4013025461e-08, global = 3.70056719207e-20, cumulative = 8.18384852164e-19
+GAMG:  Solving for p, Initial residual = 1.00497244702e-05, Final residual = 5.10026521139e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082086987e-08, global = 2.11806953877e-20, cumulative = 8.39565547552e-19
+ExecutionTime = 15.53 s  ClockTime = 43 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1725
+
+Courant Number mean: 0.061898031339 max: 0.0763483763221
+GAMG:  Solving for p, Initial residual = 0.00476321536594, Final residual = 3.38823475006e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266314714e-08, global = 5.93180158578e-21, cumulative = 8.45497349138e-19
+GAMG:  Solving for p, Initial residual = 0.00118153624852, Final residual = 8.33664644657e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130251628e-08, global = -1.70117391426e-20, cumulative = 8.28485609995e-19
+GAMG:  Solving for p, Initial residual = 1.00497253453e-05, Final residual = 5.10026559412e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082081433e-08, global = 3.51297824128e-20, cumulative = 8.63615392408e-19
+ExecutionTime = 15.88 s  ClockTime = 43 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.17625
+
+Courant Number mean: 0.0618980302619 max: 0.0763483766466
+GAMG:  Solving for p, Initial residual = 0.00476321542635, Final residual = 3.38823473251e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266309561e-08, global = 3.99234987706e-20, cumulative = 9.03538891179e-19
+GAMG:  Solving for p, Initial residual = 0.00118153625689, Final residual = 8.33664638761e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130248656e-08, global = -1.74635135191e-20, cumulative = 8.8607537766e-19
+GAMG:  Solving for p, Initial residual = 1.00497261959e-05, Final residual = 5.10026593791e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082075894e-08, global = -6.55334335926e-21, cumulative = 8.795220343e-19
+ExecutionTime = 16.25 s  ClockTime = 43 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.18
+
+Courant Number mean: 0.0618980291849 max: 0.076348376972
+GAMG:  Solving for p, Initial residual = 0.0047632154868, Final residual = 3.3882347148e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266304421e-08, global = 1.37479408201e-20, cumulative = 8.9326997512e-19
+GAMG:  Solving for p, Initial residual = 0.00118153626514, Final residual = 8.33664632757e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130245691e-08, global = -6.92868217781e-21, cumulative = 8.86341292943e-19
+GAMG:  Solving for p, Initial residual = 1.00497270281e-05, Final residual = 5.1002663446e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082070369e-08, global = 3.85903017238e-20, cumulative = 9.24931594666e-19
+ExecutionTime = 16.61 s  ClockTime = 44 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.18375
+
+Courant Number mean: 0.0618980281081 max: 0.0763483772985
+GAMG:  Solving for p, Initial residual = 0.00476321554727, Final residual = 3.38823469703e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266299293e-08, global = 1.27832436209e-20, cumulative = 9.37714838287e-19
+GAMG:  Solving for p, Initial residual = 0.00118153627329, Final residual = 8.3366462676e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130242736e-08, global = 1.36513906417e-20, cumulative = 9.51366228929e-19
+GAMG:  Solving for p, Initial residual = 1.00497278445e-05, Final residual = 5.10026674377e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082064861e-08, global = -4.90072613889e-21, cumulative = 9.4646550279e-19
+ExecutionTime = 16.94 s  ClockTime = 44 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.1875
+
+Courant Number mean: 0.0618980270315 max: 0.0763483776259
+GAMG:  Solving for p, Initial residual = 0.00476321560778, Final residual = 3.38823467924e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426629418e-08, global = 2.33538789866e-20, cumulative = 9.69819381777e-19
+GAMG:  Solving for p, Initial residual = 0.00118153628133, Final residual = 8.33664620708e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130239789e-08, global = 2.1042709091e-20, cumulative = 9.90862090868e-19
+GAMG:  Solving for p, Initial residual = 1.00497286349e-05, Final residual = 5.10026712455e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082059369e-08, global = -1.42532200871e-21, cumulative = 9.89436768859e-19
+ExecutionTime = 17.32 s  ClockTime = 45 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.19125
+
+Courant Number mean: 0.061898025955 max: 0.0763483779543
+GAMG:  Solving for p, Initial residual = 0.00476321566835, Final residual = 3.38823466138e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266289094e-08, global = -1.07556898744e-20, cumulative = 9.78681078985e-19
+GAMG:  Solving for p, Initial residual = 0.00118153628927, Final residual = 8.33664614646e-06, No Iterations 6
+time step continuity errors : sum local = 1.4013023685e-08, global = 4.34475802824e-22, cumulative = 9.79115554788e-19
+GAMG:  Solving for p, Initial residual = 1.00497294089e-05, Final residual = 5.10026758574e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082053893e-08, global = 3.9859131985e-21, cumulative = 9.83101467986e-19
+ExecutionTime = 17.66 s  ClockTime = 45 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.195
+
+Courant Number mean: 0.0618980248788 max: 0.0763483782837
+GAMG:  Solving for p, Initial residual = 0.00476321572899, Final residual = 3.38823464347e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266284048e-08, global = -2.11951779144e-20, cumulative = 9.61906290072e-19
+GAMG:  Solving for p, Initial residual = 0.00118153629711, Final residual = 8.33664608542e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130233921e-08, global = 2.55258557083e-20, cumulative = 9.8743214578e-19
+GAMG:  Solving for p, Initial residual = 1.00497301627e-05, Final residual = 5.10026796823e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082048433e-08, global = 5.43175212012e-20, cumulative = 1.04174966698e-18
+ExecutionTime = 17.97 s  ClockTime = 45 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.19875
+
+Courant Number mean: 0.0618980238027 max: 0.0763483786142
+GAMG:  Solving for p, Initial residual = 0.00476321578968, Final residual = 3.38823462546e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266279027e-08, global = 1.73693770951e-20, cumulative = 1.05911904408e-18
+GAMG:  Solving for p, Initial residual = 0.00118153630483, Final residual = 8.33664602384e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130231e-08, global = 9.63852385172e-21, cumulative = 1.06875756793e-18
+GAMG:  Solving for p, Initial residual = 1.00497308942e-05, Final residual = 5.10026842831e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082042991e-08, global = -4.23372532307e-21, cumulative = 1.0645238426e-18
+ExecutionTime = 18.27 s  ClockTime = 46 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2025
+
+Courant Number mean: 0.0618980227269 max: 0.0763483789457
+GAMG:  Solving for p, Initial residual = 0.00476321585045, Final residual = 3.3882346074e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266274022e-08, global = -2.9718949498e-20, cumulative = 1.03480489311e-18
+GAMG:  Solving for p, Initial residual = 0.00118153631246, Final residual = 8.33664596242e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130228088e-08, global = -4.67906302097e-21, cumulative = 1.03012583009e-18
+GAMG:  Solving for p, Initial residual = 1.00497316028e-05, Final residual = 5.10026883e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082037567e-08, global = -2.35984727719e-21, cumulative = 1.02776598281e-18
+ExecutionTime = 18.58 s  ClockTime = 46 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.20625
+
+Courant Number mean: 0.0618980216512 max: 0.0763483792783
+GAMG:  Solving for p, Initial residual = 0.00476321591129, Final residual = 3.38823458931e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266269039e-08, global = -1.69481769418e-20, cumulative = 1.01081780587e-18
+GAMG:  Solving for p, Initial residual = 0.00118153631999, Final residual = 8.33664590059e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130225186e-08, global = -7.81593808812e-21, cumulative = 1.00300186778e-18
+GAMG:  Solving for p, Initial residual = 1.00497322947e-05, Final residual = 5.10026923114e-08, No Iterations 7
+time step continuity errors : sum local = 2.7308203216e-08, global = -3.38935378368e-20, cumulative = 9.69108329942e-19
+ExecutionTime = 18.88 s  ClockTime = 46 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.21
+
+Courant Number mean: 0.0618980205758 max: 0.0763483796121
+GAMG:  Solving for p, Initial residual = 0.00476321597221, Final residual = 3.38823457119e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266264075e-08, global = -2.16747104672e-20, cumulative = 9.47433619475e-19
+GAMG:  Solving for p, Initial residual = 0.00118153632743, Final residual = 8.33664583812e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130222293e-08, global = -2.1836432016e-21, cumulative = 9.45249976273e-19
+GAMG:  Solving for p, Initial residual = 1.00497329659e-05, Final residual = 5.10026965488e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082026771e-08, global = -2.4246163552e-21, cumulative = 9.42825359918e-19
+ExecutionTime = 19.18 s  ClockTime = 46 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.21375
+
+Courant Number mean: 0.0618980195005 max: 0.0763483799469
+GAMG:  Solving for p, Initial residual = 0.00476321603318, Final residual = 3.38823455287e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266259143e-08, global = -9.57093872684e-21, cumulative = 9.33254421191e-19
+GAMG:  Solving for p, Initial residual = 0.00118153633479, Final residual = 8.33664577541e-06, No Iterations 6
+time step continuity errors : sum local = 1.4013021941e-08, global = 1.68005356274e-20, cumulative = 9.50054956819e-19
+GAMG:  Solving for p, Initial residual = 1.00497336144e-05, Final residual = 5.10027009488e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082021401e-08, global = -4.47268701463e-21, cumulative = 9.45582269804e-19
+ExecutionTime = 19.51 s  ClockTime = 47 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2175
+
+Courant Number mean: 0.0618980184255 max: 0.0763483802829
+GAMG:  Solving for p, Initial residual = 0.00476321609424, Final residual = 3.38823453457e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266254256e-08, global = -1.0797528285e-21, cumulative = 9.44502516975e-19
+GAMG:  Solving for p, Initial residual = 0.00118153634205, Final residual = 8.33664571278e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130216535e-08, global = -1.096528422e-20, cumulative = 9.33537232755e-19
+GAMG:  Solving for p, Initial residual = 1.00497342441e-05, Final residual = 5.10027054042e-08, No Iterations 7
+time step continuity errors : sum local = 2.7308201605e-08, global = 2.72705978906e-20, cumulative = 9.60807830646e-19
+ExecutionTime = 19.82 s  ClockTime = 47 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.22125
+
+Courant Number mean: 0.0618980173506 max: 0.0763483806201
+GAMG:  Solving for p, Initial residual = 0.0047632161554, Final residual = 3.3882345162e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266249459e-08, global = 1.4973323501e-21, cumulative = 9.62305162996e-19
+GAMG:  Solving for p, Initial residual = 0.00118153634922, Final residual = 8.33664565017e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130213671e-08, global = 6.30864900087e-20, cumulative = 1.025391653e-18
+GAMG:  Solving for p, Initial residual = 1.00497348486e-05, Final residual = 5.10027095655e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082010717e-08, global = -2.74001360466e-20, cumulative = 9.97991516958e-19
+ExecutionTime = 20.14 s  ClockTime = 47 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.225
+
+Courant Number mean: 0.061898016276 max: 0.0763483809584
+GAMG:  Solving for p, Initial residual = 0.00476321621665, Final residual = 3.38823449778e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266244691e-08, global = 5.24766311329e-20, cumulative = 1.05046814809e-18
+GAMG:  Solving for p, Initial residual = 0.0011815363563, Final residual = 8.33664558638e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130210817e-08, global = -1.76743147419e-20, cumulative = 1.03279383335e-18
+GAMG:  Solving for p, Initial residual = 1.00497354351e-05, Final residual = 5.10027143612e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082005404e-08, global = 5.56450861543e-21, cumulative = 1.03835834196e-18
+ExecutionTime = 20.45 s  ClockTime = 48 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.22875
+
+Courant Number mean: 0.0618980152016 max: 0.0763483812979
+GAMG:  Solving for p, Initial residual = 0.00476321627801, Final residual = 3.38823447927e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426623994e-08, global = 1.91286018041e-20, cumulative = 1.05748694377e-18
+GAMG:  Solving for p, Initial residual = 0.0011815363633, Final residual = 8.33664552269e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130207972e-08, global = 6.2335208933e-22, cumulative = 1.05811029586e-18
+GAMG:  Solving for p, Initial residual = 1.0049736e-05, Final residual = 5.10027188252e-08, No Iterations 7
+time step continuity errors : sum local = 2.73082000112e-08, global = -1.29546201875e-20, cumulative = 1.04515567567e-18
+ExecutionTime = 20.77 s  ClockTime = 48 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2325
+
+Courant Number mean: 0.0618980141274 max: 0.0763483816386
+GAMG:  Solving for p, Initial residual = 0.00476321633945, Final residual = 3.38823446066e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266235225e-08, global = 1.03232255336e-20, cumulative = 1.0554789012e-18
+GAMG:  Solving for p, Initial residual = 0.0011815363702, Final residual = 8.33664545861e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130205138e-08, global = -3.69199836374e-20, cumulative = 1.01855891757e-18
+GAMG:  Solving for p, Initial residual = 1.00497365435e-05, Final residual = 5.10027231494e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081994838e-08, global = -5.45745860512e-20, cumulative = 9.63984331516e-19
+ExecutionTime = 21.07 s  ClockTime = 48 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.23625
+
+Courant Number mean: 0.0618980130535 max: 0.0763483819806
+GAMG:  Solving for p, Initial residual = 0.00476321640082, Final residual = 3.38823444187e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266230556e-08, global = -4.07815884812e-20, cumulative = 9.23202743034e-19
+GAMG:  Solving for p, Initial residual = 0.00118153637704, Final residual = 8.33664539434e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130202314e-08, global = 1.66315728151e-20, cumulative = 9.3983431585e-19
+GAMG:  Solving for p, Initial residual = 1.00497370677e-05, Final residual = 5.10027278058e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081989586e-08, global = 2.16574118935e-20, cumulative = 9.61491727743e-19
+ExecutionTime = 21.36 s  ClockTime = 49 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.24
+
+Courant Number mean: 0.0618980119797 max: 0.0763483823237
+GAMG:  Solving for p, Initial residual = 0.00476321646213, Final residual = 3.38823442287e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266225924e-08, global = -7.32856083338e-21, cumulative = 9.5416316691e-19
+GAMG:  Solving for p, Initial residual = 0.0011815363838, Final residual = 8.33664533014e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130199501e-08, global = -6.28300285973e-21, cumulative = 9.4788016405e-19
+GAMG:  Solving for p, Initial residual = 1.00497375679e-05, Final residual = 5.10027323829e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081984353e-08, global = -1.79816661432e-20, cumulative = 9.29898497907e-19
+ExecutionTime = 21.66 s  ClockTime = 49 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.24375
+
+Courant Number mean: 0.0618980109062 max: 0.0763483826682
+GAMG:  Solving for p, Initial residual = 0.00476321652329, Final residual = 3.38823440365e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266221326e-08, global = 2.7054164574e-21, cumulative = 9.32603914364e-19
+GAMG:  Solving for p, Initial residual = 0.00118153639048, Final residual = 8.33664526514e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130196698e-08, global = 8.1323410686e-21, cumulative = 9.40736255433e-19
+GAMG:  Solving for p, Initial residual = 1.00497380467e-05, Final residual = 5.10027373001e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081979143e-08, global = 5.20856029104e-20, cumulative = 9.92821858343e-19
+ExecutionTime = 21.96 s  ClockTime = 49 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2475
+
+Courant Number mean: 0.061898009833 max: 0.076348383014
+GAMG:  Solving for p, Initial residual = 0.00476321658451, Final residual = 3.38823438423e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266216783e-08, global = 1.98458891712e-20, cumulative = 1.01266774751e-18
+GAMG:  Solving for p, Initial residual = 0.00118153639708, Final residual = 8.33664520017e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130193905e-08, global = 9.13161530047e-20, cumulative = 1.10398390052e-18
+GAMG:  Solving for p, Initial residual = 1.00497385032e-05, Final residual = 5.10027418255e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081973953e-08, global = 3.50718523057e-21, cumulative = 1.10749108575e-18
+ExecutionTime = 22.25 s  ClockTime = 50 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.25125
+
+Courant Number mean: 0.0618980087599 max: 0.076348383361
+GAMG:  Solving for p, Initial residual = 0.0047632166458, Final residual = 3.38823436473e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266212269e-08, global = 2.00482422535e-20, cumulative = 1.127539328e-18
+GAMG:  Solving for p, Initial residual = 0.0011815364036, Final residual = 8.33664513491e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130191124e-08, global = -2.34518371885e-20, cumulative = 1.10408749081e-18
+GAMG:  Solving for p, Initial residual = 1.00497389403e-05, Final residual = 5.10027465927e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081968785e-08, global = -2.29708966123e-20, cumulative = 1.0811165942e-18
+ExecutionTime = 22.56 s  ClockTime = 50 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.255
+
+Courant Number mean: 0.0618980076871 max: 0.0763483837094
+GAMG:  Solving for p, Initial residual = 0.00476321670724, Final residual = 3.38823434521e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266207796e-08, global = -3.93667260751e-20, cumulative = 1.04174986813e-18
+GAMG:  Solving for p, Initial residual = 0.00118153641006, Final residual = 8.336645069e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130188353e-08, global = -3.51402420154e-21, cumulative = 1.03823584393e-18
+GAMG:  Solving for p, Initial residual = 1.00497393503e-05, Final residual = 5.10027512323e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081963639e-08, global = 1.49982656305e-20, cumulative = 1.05323410956e-18
+ExecutionTime = 22.87 s  ClockTime = 50 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.25875
+
+Courant Number mean: 0.0618980066146 max: 0.076348384059
+GAMG:  Solving for p, Initial residual = 0.00476321676884, Final residual = 3.38823432554e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266203354e-08, global = 4.35976353513e-20, cumulative = 1.09683174491e-18
+GAMG:  Solving for p, Initial residual = 0.00118153641643, Final residual = 8.33664500266e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130185593e-08, global = -1.90533731235e-20, cumulative = 1.07777837178e-18
+GAMG:  Solving for p, Initial residual = 1.00497397415e-05, Final residual = 5.10027563406e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081958515e-08, global = 2.26732002289e-21, cumulative = 1.08004569181e-18
+ExecutionTime = 23.16 s  ClockTime = 50 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2625
+
+Courant Number mean: 0.0618980055423 max: 0.0763483844101
+GAMG:  Solving for p, Initial residual = 0.00476321683057, Final residual = 3.3882343058e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266198934e-08, global = 2.28904381303e-21, cumulative = 1.08233473562e-18
+GAMG:  Solving for p, Initial residual = 0.00118153642275, Final residual = 8.33664493654e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130182844e-08, global = -2.58320002323e-20, cumulative = 1.05650273539e-18
+GAMG:  Solving for p, Initial residual = 1.00497401096e-05, Final residual = 5.10027609096e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081953413e-08, global = 2.3640713475e-20, cumulative = 1.08014344886e-18
+ExecutionTime = 23.46 s  ClockTime = 51 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.26625
+
+Courant Number mean: 0.0618980044702 max: 0.0763483847625
+GAMG:  Solving for p, Initial residual = 0.0047632168925, Final residual = 3.38823428613e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266194539e-08, global = 7.47740902508e-21, cumulative = 1.08762085789e-18
+GAMG:  Solving for p, Initial residual = 0.001181536429, Final residual = 8.33664487014e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130180107e-08, global = 4.52329539981e-20, cumulative = 1.13285381189e-18
+GAMG:  Solving for p, Initial residual = 1.00497404584e-05, Final residual = 5.10027658564e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081948335e-08, global = 4.4104523788e-20, cumulative = 1.17695833567e-18
+ExecutionTime = 23.74 s  ClockTime = 51 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.27
+
+Courant Number mean: 0.0618980033984 max: 0.0763483851163
+GAMG:  Solving for p, Initial residual = 0.00476321695457, Final residual = 3.38823426625e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266190189e-08, global = 6.35477182568e-20, cumulative = 1.24050605393e-18
+GAMG:  Solving for p, Initial residual = 0.00118153643517, Final residual = 8.33664480324e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130177381e-08, global = 6.20817647146e-21, cumulative = 1.2467142304e-18
+GAMG:  Solving for p, Initial residual = 1.00497407821e-05, Final residual = 5.10027705805e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081943279e-08, global = 1.51978026658e-20, cumulative = 1.26191203307e-18
+ExecutionTime = 24.04 s  ClockTime = 51 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.27375
+
+Courant Number mean: 0.0618980023269 max: 0.0763483854715
+GAMG:  Solving for p, Initial residual = 0.00476321701678, Final residual = 3.38823424631e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266185864e-08, global = -1.92967600315e-20, cumulative = 1.24261527304e-18
+GAMG:  Solving for p, Initial residual = 0.00118153644127, Final residual = 8.33664473559e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130174667e-08, global = 1.88848126037e-20, cumulative = 1.26150008564e-18
+GAMG:  Solving for p, Initial residual = 1.00497410846e-05, Final residual = 5.10027755537e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081938247e-08, global = 3.8687656487e-20, cumulative = 1.30018774213e-18
+ExecutionTime = 24.32 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2775
+
+Courant Number mean: 0.0618980012556 max: 0.0763483858281
+GAMG:  Solving for p, Initial residual = 0.00476321707916, Final residual = 3.38823422632e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266181565e-08, global = -1.79168970652e-20, cumulative = 1.28227084506e-18
+GAMG:  Solving for p, Initial residual = 0.00118153644731, Final residual = 8.33664466778e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130171965e-08, global = -1.89962476013e-21, cumulative = 1.2803712203e-18
+GAMG:  Solving for p, Initial residual = 1.00497413618e-05, Final residual = 5.10027806922e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081933238e-08, global = 1.44044820333e-20, cumulative = 1.29477570233e-18
+ExecutionTime = 24.62 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.28125
+
+Courant Number mean: 0.0618980001846 max: 0.0763483861862
+GAMG:  Solving for p, Initial residual = 0.00476321714174, Final residual = 3.38823420625e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266177331e-08, global = -1.04592003682e-20, cumulative = 1.28431650197e-18
+GAMG:  Solving for p, Initial residual = 0.0011815364533, Final residual = 8.33664460005e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130169274e-08, global = 1.22699185057e-22, cumulative = 1.28443920115e-18
+GAMG:  Solving for p, Initial residual = 1.00497416207e-05, Final residual = 5.10027853895e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081928253e-08, global = 3.75958348862e-20, cumulative = 1.32203503604e-18
+ExecutionTime = 24.91 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.285
+
+Courant Number mean: 0.0618979991138 max: 0.0763483865457
+GAMG:  Solving for p, Initial residual = 0.00476321720448, Final residual = 3.38823418611e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426617314e-08, global = 3.24826983548e-20, cumulative = 1.35451773439e-18
+GAMG:  Solving for p, Initial residual = 0.00118153645921, Final residual = 8.33664453227e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130166595e-08, global = 1.28673227346e-20, cumulative = 1.36738505713e-18
+GAMG:  Solving for p, Initial residual = 1.00497418564e-05, Final residual = 5.10027907445e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081923292e-08, global = -1.86462532045e-20, cumulative = 1.34873880392e-18
+ExecutionTime = 25.2 s  ClockTime = 52 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.28875
+
+Courant Number mean: 0.0618979980433 max: 0.0763483869067
+GAMG:  Solving for p, Initial residual = 0.00476321726739, Final residual = 3.38823416592e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266168999e-08, global = 1.38613872797e-20, cumulative = 1.3626001912e-18
+GAMG:  Solving for p, Initial residual = 0.00118153646507, Final residual = 8.33664446363e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130163928e-08, global = -3.24702272901e-20, cumulative = 1.33012996391e-18
+GAMG:  Solving for p, Initial residual = 1.00497420658e-05, Final residual = 5.10027959059e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081918355e-08, global = 1.55208434711e-20, cumulative = 1.34565080738e-18
+ExecutionTime = 25.48 s  ClockTime = 53 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.2925
+
+Courant Number mean: 0.0618979969731 max: 0.0763483872692
+GAMG:  Solving for p, Initial residual = 0.00476321733049, Final residual = 3.3882341456e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426616491e-08, global = 6.03277698069e-21, cumulative = 1.35168358436e-18
+GAMG:  Solving for p, Initial residual = 0.00118153647087, Final residual = 8.33664439477e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130161274e-08, global = 6.0770291458e-21, cumulative = 1.35776061351e-18
+GAMG:  Solving for p, Initial residual = 1.00497422557e-05, Final residual = 5.1002800956e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081913444e-08, global = -1.38388589048e-20, cumulative = 1.34392175461e-18
+ExecutionTime = 25.76 s  ClockTime = 53 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.29625
+
+Courant Number mean: 0.0618979959031 max: 0.0763483876332
+GAMG:  Solving for p, Initial residual = 0.00476321739376, Final residual = 3.38823412514e-05, No Iterations 6
+time step continuity errors : sum local = 2.7426616085e-08, global = -2.73643320221e-20, cumulative = 1.31655742258e-18
+GAMG:  Solving for p, Initial residual = 0.00118153647663, Final residual = 8.33664432549e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130158631e-08, global = 8.87577744232e-21, cumulative = 1.32543320003e-18
+GAMG:  Solving for p, Initial residual = 1.00497424232e-05, Final residual = 5.10028064925e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081908558e-08, global = 3.63889576562e-20, cumulative = 1.36182215768e-18
+ExecutionTime = 26.05 s  ClockTime = 53 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+Time = 0.3
+
+Courant Number mean: 0.0618979948335 max: 0.0763483879986
+GAMG:  Solving for p, Initial residual = 0.00476321745719, Final residual = 3.38823410469e-05, No Iterations 6
+time step continuity errors : sum local = 2.74266156821e-08, global = -3.36827366139e-20, cumulative = 1.32813942107e-18
+GAMG:  Solving for p, Initial residual = 0.00118153648232, Final residual = 8.33664425596e-06, No Iterations 6
+time step continuity errors : sum local = 1.40130156001e-08, global = 2.62538038243e-20, cumulative = 1.35439322489e-18
+GAMG:  Solving for p, Initial residual = 1.00497425667e-05, Final residual = 5.10028118648e-08, No Iterations 7
+time step continuity errors : sum local = 2.73081903696e-08, global = -3.35873933128e-20, cumulative = 1.32080583158e-18
+ExecutionTime = 26.33 s  ClockTime = 54 s
+
+volFieldValue error_velocity_norm write:
+    max(region0) of error_velocity_mag = 6.37037980646e-06
+
+volFieldValue L2_error_velocity_norm write:
+    sqrt(sum(region0)) of error_velocity_mag_squ = 0.000577254507068
+
+volFieldValue error_pressure_norm write:
+    max(region0) of error_pres = 0.000939252467222
+
+End
+

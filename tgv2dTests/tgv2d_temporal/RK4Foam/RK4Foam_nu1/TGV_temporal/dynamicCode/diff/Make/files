@@ -1,0 +1,6 @@
+/* dynamicCode:
+ * SHA1 = d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8
+ */
+functionObjectTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libdiff_d924c92ec3fe0b16fec6b8892a9fc1c20fa93dd8

@@ -1,0 +1,7 @@
+# Region            : all region0
+# Cells             : 16384
+# Volume            : 3.947841760211e+00
+# Time              	max(error_velocity_mag)
+0.015               	8.859260513520e-02
+0.03                	8.859260513520e-02
+0.045               	8.859260513520e-02

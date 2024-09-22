@@ -1,0 +1,85 @@
+FoamFile
+{
+        version 2.0;
+        format  ascii;
+        class   dictionary;
+        object  blockMeshDict;
+}
+pi  	3.1415926535;
+length #calc "2.*$pi";
+depth -0.1;
+
+vertices
+(
+	(0 0 0)			//node 0
+	($length 0 0)		//node 1
+	($length 0 $depth)	//node 2
+	(0 0 $depth)		//node 3
+	(0 $length 0)		//node 4
+	($length $length 0)	//node 5
+	($length $length $depth)//node 6
+	(0 $length $depth)	//node 7
+);
+
+num_cells 128;
+
+blocks
+(
+	hex (0 1 2 3 4 5 6 7)
+	($num_cells 1 $num_cells)
+	simpleGrading (1 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+	left
+	{
+		type cyclic;
+		neighbourPatch right;
+		faces
+		(
+			(3 7 4 0)
+		);
+	}
+	right
+	{
+		type cyclic;
+		neighbourPatch left;
+		faces
+		(
+			(1 2 6 5)
+		);
+	}
+	top
+	{
+		type cyclic;
+		neighbourPatch bottom;
+		faces
+		(
+			(4 5 6 7)
+		);
+	}
+	bottom
+	{
+		type cyclic;
+		neighbourPatch top;
+		faces
+		(
+			(0 1 2 3)
+		);
+	}
+	ignore
+	{	
+		type empty;
+		faces
+		(
+			(0 1 5 4)
+			(3 2 6 7)
+		);
+	}
+);
+

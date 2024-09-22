@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "controldict": "c",
+        "cmath": "c",
+        "complex": "c"
+    }
+}

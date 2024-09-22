@@ -1,0 +1,5 @@
+Folder	Time	Max Error Velocity Magnitude
+deltaT_0.0075	0.3	1.345737236600e-05
+deltaT_0.03	0.3	5.371340541550e-05
+deltaT_0.015	0.3	2.689501830820e-05
+deltaT_0.00375	0.3	6.731179178820e-06

@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvOptions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+codedSource
+{
+    type            vectorCodedSource;
+    selectionMode   all;
+
+    fields          (U);  // Apply for velocity
+    name            velocitySourceTerm;
+
+    codeAddSup
+    #{
+	    const Time& time = mesh().time();  // Access current simulation time
+	    const scalarField& V = mesh().V();  // Cell volumes
+	    vectorField& USource = eqn.source();  // Access source term for the velocity equation
+	    const volVectorField& U = mesh().lookupObject<volVectorField>("U");  
+
+	    const scalar a = 1.0;  
+	    const scalar b = 1.0;  
+	    const scalar omega = 10.0;  
+
+
+	    forAll(V, i)
+	    {
+		// X component of the velocity field U
+		scalar Ux = U[i].x();
+
+		// ODE: dy/dt = -a y + b cos(omega t)
+		scalar term = (-a * Ux + b * cos(omega * time.value()));
+
+		// Ax = b - SourceTerm*V
+		USource[i].x() -= term * V[i];
+
+
+		USource[i].y() = 0.0;
+		USource[i].z() = 0.0;
+	    }
+#};
+    codeCorrect
+    #{
+
+        Info << "No codeCorret" << endl;
+
+    #};
+
+    codeConstrain
+    #{
+
+        Info << "No codeConstrain" << endl;
+
+    #};
+}
+

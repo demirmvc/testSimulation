@@ -1,0 +1,7 @@
+# Region            : all region0
+# Cells             : 16384
+# Volume            : 3.947841760211e+00
+# Time              	sum(error_velocity_mag_squ)
+0.015               	2.848466055646e-01
+0.03                	2.848466055646e-01
+0.045               	2.848466055646e-01
