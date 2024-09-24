@@ -1,0 +1,131 @@
+
+    TKE
+    {
+        type coded;
+        libs (utilityFunctionObjects);
+
+        name TKE;
+	codeWrite
+	#{
+	    #include <fstream>
+	    #include "dimensionSet.H"
+	    #include "Pstream.H"
+
+	    const fvMesh& mesh = this->mesh();  
+	    const Time& runTime = mesh.time();  
+	    const volVectorField& U = mesh.lookupObject<volVectorField>("U"); 
+
+	    IOdictionary transportProperties
+	    (
+		IOobject
+		(
+		    "transportProperties",
+		    runTime.constant(),
+		    mesh,
+		    IOobject::MUST_READ,
+		    IOobject::NO_WRITE
+		)
+	    );
+
+	    dimensionedScalar nu
+	    (
+		"nu",
+		dimViscosity,
+		transportProperties
+	    );	
+
+	    volScalarField TKE
+	    (
+		IOobject
+		(
+		    "TKE",
+		    runTime.timeName(),
+		    mesh,
+		    IOobject::READ_IF_PRESENT,
+		    IOobject::AUTO_WRITE
+		),
+		mesh,
+		dimensionedScalar("TKE", dimensionSet(0, 2, -2, 0, 0, 0, 0), 0.0)
+	    );
+
+	    volScalarField dissipationRate
+	    (
+		IOobject
+		(
+		    "dissipationRate",
+		    runTime.timeName(),
+		    mesh,
+		    IOobject::READ_IF_PRESENT,
+		    IOobject::AUTO_WRITE
+		),
+		mesh,
+		dimensionedScalar("dissipationRate", dimensionSet(0, 2, -3, 0, 0, 0, 0), 0.0)
+	    );
+
+	    TKE = 0.5 * (U & U); // & inner product of two tensors 
+	    volSymmTensorField S = symm(fvc::grad(U));
+	    dissipationRate = 2 * nu * (S && S); 
+
+	    const scalarField& V = mesh.V();  // Cell volumes as weights
+	    scalar totalTKE = gSum(TKE.internalField() * V);
+	    scalar totalDissipationRate = gSum(dissipationRate.internalField() * V);
+	    scalar totalVolume = gSum(V);
+
+	    scalar weightedAverageTKE = totalTKE / totalVolume;
+	    scalar weightedAverageDissipationRate = totalDissipationRate / totalVolume;
+	    
+	    Info << "Weighted Average of TKE: " << weightedAverageTKE << endl;
+	    Info << "Weighted Average of Dissipation Rate: " << weightedAverageDissipationRate << endl;
+
+		// Writing to file with increased precision on the master processor only
+		if (Pstream::master()) {
+		    std::ofstream outFile("weightedAverageResults.csv", std::ios_base::app); 
+		    if (outFile.is_open()) {
+			// Check if the file is empty, if so, write the header
+			std::ifstream inFile("weightedAverageResults.csv");
+			inFile.seekg(0, std::ios::end);
+			if (inFile.tellg() == 0) {
+            			outFile << "\"time\",\"TKE\",\"dissipationRate\"" << std::endl;
+
+			}
+			inFile.close();
+
+			outFile.precision(20);  
+			outFile << std::fixed;  
+			outFile << runTime.timeName() 
+				<< "," << weightedAverageTKE 
+				<< " ," << weightedAverageDissipationRate 
+				<< std::endl;
+			outFile.close();
+		    } else {
+			Info << "Error opening file." << endl;
+		    }
+		}
+	#};
+        
+        executeControl writeTime;
+        executeInterval 1 ;
+        writeControl writeTime;
+        writeInterval 1;
+        
+       
+    } 
+
+    energySpectrum
+    {
+        type            energySpectrum;
+        libs            (randomProcessesFunctionObjects);
+        log yes;
+        
+        writeFields     true;
+	writeToFile     true;
+        executeControl writeTime;
+        executeInterval 10 ;
+        writeControl writeTime;
+        writeInterval 10;
+    }
+    
+
+		
+		
+	

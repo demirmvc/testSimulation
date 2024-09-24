@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2212                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   #codeStream
+
+{
+        codeInclude
+        #{
+            #include "fvCFD.H"
+        #};
+
+        codeOptions
+        #{
+            -I$(LIB_SRC)/finiteVolume/lnInclude \
+            -I$(LIB_SRC)/meshTools/lnInclude
+        #};
+
+        codeLibs
+        #{
+            -lmeshTools \
+            -lfiniteVolume
+        #};
+
+        code
+        #{
+
+		const IOdictionary& d = static_cast<const IOdictionary&>(dict);
+		const fvMesh& mesh = refCast<const fvMesh>(d.db());
+
+		vectorField init_U(mesh.nCells(), vector(0.0, 0.0, 0.0));
+	    
+		forAll(init_U, i)
+		{
+			const scalar x = mesh.C()[i][0];
+			const scalar y = mesh.C()[i][1];
+
+			const scalar u =   Foam::cos(y)*Foam::sin(x);
+			const scalar v =  -Foam::sin(y)*Foam::cos(x);
+
+			init_U[i] = vector(u, v, 0.0);
+		}
+
+		init_U.writeEntry("", os);
+	#};
+};
+		
+boundaryField
+{
+    left
+    {
+        type            cyclic;
+    }
+    right
+    {
+        type            cyclic;
+    }
+    top
+    {
+        type            cyclic;
+    }
+    bottom
+    {
+        type            cyclic;
+    }
+}
+
+// ************************************************************************* //
